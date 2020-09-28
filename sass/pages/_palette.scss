@@ -1,0 +1,157 @@
+
+.heart_palette {
+    position: absolute;
+    top: 35px;
+    left: 250px;
+    color: black;
+}
+
+/*Palette*/
+
+.size_photo_palette {
+    background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    width: 380px;
+    height: 250px; 
+    margin-left: -10px;
+}
+
+.palette {
+    position: relative;
+    border: 2px solid $color-grey;
+    width: 375px;
+    border-radius: 10% 10% 0% 0%;
+    background-color: $color-grey;
+    margin-left: -9px;
+    margin-top: -50px;
+
+    &__titre {
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+
+    &__entree {
+        margin-left: 15px;
+
+        &__escargot {
+            @include buttons_palette(1px);
+            
+            &__description {
+                @include description_palette;
+
+                &__price {
+                    @include price_palette(80px);
+                }
+            }
+        }
+
+        &__duck {
+            @include buttons_palette(1px);
+
+            &__description {
+                @include description_palette;
+
+                &__price {
+                    @include price_palette(90px);
+                }
+            }
+        }
+
+        &__fried {
+            @include buttons_palette(1px);
+
+            &__description {
+                @include description_palette;
+
+                &__price {
+                    @include price_palette(247px);
+                }
+            }
+        }
+    }
+
+    &__maindish {
+        margin-left: -10px;
+        background-color: #EEEEEE;
+        margin-top: -20px;
+        padding-left: 20px;
+
+        &__herb {
+            @include buttons_palette(0px);
+            
+            &__description {
+                @include description_palette;
+
+                &__price {
+                    @include price_palette(35px);
+                    padding-top: 20px;
+                }
+            }
+        }
+
+        &__ox {
+            @include buttons_palette(1px);
+
+            &__description {
+                @include description_palette;
+
+                &__price {
+                    @include price_palette(20px);
+                }
+            }
+        }
+
+        &__filet {
+            @include buttons_palette(1px);
+
+            &__description {
+                @include description_palette;
+
+                &__price {
+                    @include price_palette(138px);
+                }
+            }
+        }
+    }
+
+    &__dessert {
+        background-color: #EEEEEE;
+        padding-bottom: 30px;
+
+        &__paris {
+            @include buttons_palette(1px);
+            
+            &__description {
+                @include description_palette;
+
+                &__price {
+                    @include price_palette(210px);
+                }
+            }
+        }
+
+        &__macaroons {
+            @include buttons_palette(1px);
+
+            &__description {
+                @include description_palette;
+
+                &__price {
+                    @include price_palette(120px);
+                }
+            }
+        }
+
+        &__mousse {
+            @include buttons_palette(1px);
+
+            &__description {
+                @include description_palette;
+                margin-right: -50px;
+
+                &__price {
+                    @include price_palette(82px);
+                }
+            }
+        }
+    }
+}

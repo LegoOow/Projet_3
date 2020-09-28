@@ -1,0 +1,40 @@
+@mixin buttons_how($colour) {
+        display: flex;
+        flex-direction: row;
+        background-color: $colour;
+        width: 300px;
+        padding: 0px 20px 0px;
+        border-radius: 10px;
+        margin-left: 5px;
+        margin-bottom: 20px;
+        box-shadow: 1px 1px 15px #EEEEEE;  
+}
+
+@mixin buttons_palette($padding-top) {
+        background-color: white;
+        width: 300px;
+        height: 60px;
+        padding-left: 15px;           
+        padding-top: $padding-top;
+        padding-bottom: 10px;
+        border-radius: 10px;
+        margin-left: 5px;
+        margin-bottom: 20px;
+        box-shadow: 1px 1px 15px #EEEEEE;
+}
+
+@mixin description_palette {
+        display: flex;
+        flex-direction: row;
+        margin-top: -35px;
+}
+
+@mixin price_palette($margin-price) {
+        margin-left: $margin-price;
+}
+
+@mixin menu_position {
+        background-color: #EEEEEE;
+        margin-top: -20px;
+        padding-left: 20px;
+}

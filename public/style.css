@@ -1,0 +1,468 @@
+@font-face {
+  font-family: "rubikregular";
+  src: url("fonts/rubik-regular-webfont.eot");
+  src: url("fonts/rubik-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/rubik-regular-webfont.woff2") format("woff2"), url("fonts/rubik-regular-webfont.woff") format("woff"), url("fonts/rubik-regular-webfont.ttf") format("truetype"), url("fonts/rubik-regular-webfont.svg#rubikregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.bloc_principal {
+  display: flex;
+  width: 375px;
+  flex-direction: column;
+  margin: auto;
+}
+
+h1 {
+  font-style: impact, "rubikregular", arial;
+  font-size: 1.5em;
+}
+
+.margin-logo {
+  margin-top: 18px;
+  margin-right: 10px;
+  margin-left: 1px;
+}
+
+.size_photo {
+  width: 325px;
+  height: 175px;
+  border-radius: 5% 5% 0% 0%;
+}
+
+.header__logo {
+  width: 130px;
+  margin-left: 120px;
+}
+
+.heart_shape {
+  position: absolute;
+  left: 270px;
+  bottom: 30px;
+  color: black;
+}
+
+/*Main*/
+.bloc_situation {
+  display: flex;
+  flex-direction: row;
+  background-color: #BDBDBD;
+  margin-left: -8px;
+}
+
+.fa-map-marker-alt {
+  margin-left: 8px;
+}
+
+.book {
+  text-align: center;
+  background-color: #EEEEEE;
+  margin-left: -8px;
+  padding-bottom: 40px;
+  padding-top: 5px;
+}
+.book__buttons_style {
+  border: 1px solid #b250c4;
+  padding: 20px 20px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: #b250c4;
+  box-shadow: 1px 1px 15px #BDBDBD;
+}
+.book__buttons {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.how {
+  padding-bottom: 25px;
+  padding-left: 4px;
+}
+.how__chose {
+  display: flex;
+  flex-direction: row;
+  background-color: #FAFAFA;
+  width: 300px;
+  padding: 0px 20px 0px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.how__create {
+  display: flex;
+  flex-direction: row;
+  background-color: #FAFAFA;
+  width: 300px;
+  padding: 0px 20px 0px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.how__go {
+  display: flex;
+  flex-direction: row;
+  background-color: #FAFAFA;
+  width: 300px;
+  padding: 0px 20px 0px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+
+.restaurants {
+  background-color: #EEEEEE;
+  margin-left: -8px;
+  padding-top: 10px;
+  padding-left: 12px;
+  padding-bottom: 10px;
+}
+.restaurants__palette {
+  position: relative;
+  width: 325px;
+  margin-left: 13px;
+  margin-bottom: 15px;
+  padding-bottom: 2px;
+  border-radius: 5%;
+  background-color: white;
+}
+.restaurants__palette__button {
+  text-decoration: none;
+}
+.restaurants__palette__titre {
+  margin-top: -12px;
+  margin-bottom: -15px;
+  margin-left: 8px;
+  color: black;
+}
+.restaurants__palette__ville {
+  margin-left: 10px;
+  color: black;
+}
+.restaurants__plate {
+  position: relative;
+  width: 325px;
+  margin-left: 13px;
+  margin-bottom: 15px;
+  padding-bottom: 2px;
+  border-radius: 5%;
+  background-color: white;
+}
+.restaurants__plate__button {
+  text-decoration: none;
+}
+.restaurants__plate__titre {
+  margin-top: -12px;
+  margin-bottom: -15px;
+  margin-left: 8px;
+  color: black;
+}
+.restaurants__plate__ville {
+  margin-left: 10px;
+  color: black;
+}
+.restaurants__bastille {
+  position: relative;
+  width: 325px;
+  margin-left: 13px;
+  margin-bottom: 15px;
+  padding-bottom: 2px;
+  border-radius: 5%;
+  background-color: white;
+}
+.restaurants__bastille__button {
+  text-decoration: none;
+}
+.restaurants__bastille__titre {
+  margin-top: -12px;
+  margin-bottom: -15px;
+  margin-left: 8px;
+  color: black;
+}
+.restaurants__bastille__ville {
+  margin-left: 10px;
+  color: black;
+}
+.restaurants__gourmand {
+  position: relative;
+  width: 325px;
+  margin-left: 13px;
+  margin-bottom: 15px;
+  padding-bottom: 2px;
+  border-radius: 5%;
+  background-color: white;
+}
+.restaurants__gourmand__button {
+  text-decoration: none;
+}
+.restaurants__gourmand__titre {
+  margin-top: -12px;
+  margin-bottom: -15px;
+  margin-left: 8px;
+  color: black;
+}
+.restaurants__gourmand__ville {
+  margin-left: 10px;
+  color: black;
+}
+
+.heart_palette {
+  position: absolute;
+  top: 35px;
+  left: 250px;
+  color: black;
+}
+
+/*Palette*/
+.size_photo_palette {
+  background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  width: 380px;
+  height: 250px;
+  margin-left: -10px;
+}
+
+.palette {
+  position: relative;
+  border: 2px solid #EEEEEE;
+  width: 375px;
+  border-radius: 10% 10% 0% 0%;
+  background-color: #EEEEEE;
+  margin-left: -9px;
+  margin-top: -50px;
+}
+.palette__titre {
+  margin-top: 30px;
+  margin-left: 15px;
+}
+.palette__entree {
+  margin-left: 15px;
+}
+.palette__entree__escargot {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.palette__entree__escargot__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.palette__entree__escargot__description__price {
+  margin-left: 80px;
+}
+.palette__entree__duck {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.palette__entree__duck__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.palette__entree__duck__description__price {
+  margin-left: 90px;
+}
+.palette__entree__fried {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.palette__entree__fried__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.palette__entree__fried__description__price {
+  margin-left: 247px;
+}
+.palette__maindish {
+  margin-left: -10px;
+  background-color: #EEEEEE;
+  margin-top: -20px;
+  padding-left: 20px;
+}
+.palette__maindish__herb {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.palette__maindish__herb__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.palette__maindish__herb__description__price {
+  margin-left: 35px;
+  padding-top: 20px;
+}
+.palette__maindish__ox {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.palette__maindish__ox__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.palette__maindish__ox__description__price {
+  margin-left: 20px;
+}
+.palette__maindish__filet {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.palette__maindish__filet__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.palette__maindish__filet__description__price {
+  margin-left: 138px;
+}
+.palette__dessert {
+  background-color: #EEEEEE;
+  padding-bottom: 30px;
+}
+.palette__dessert__paris {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.palette__dessert__paris__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.palette__dessert__paris__description__price {
+  margin-left: 210px;
+}
+.palette__dessert__macaroons {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.palette__dessert__macaroons__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.palette__dessert__macaroons__description__price {
+  margin-left: 120px;
+}
+.palette__dessert__mousse {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.palette__dessert__mousse__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+  margin-right: -50px;
+}
+.palette__dessert__mousse__description__price {
+  margin-left: 82px;
+}
+
+.footer {
+  width: 375px;
+  height: 190px;
+  background-color: #212121;
+  color: white;
+  margin-left: -8px;
+}
+.footer__logo {
+  width: 130px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.footer__suggest {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+.footer__partner {
+  display: flex;
+  flex-direction: row;
+  margin-left: 8px;
+  margin-top: -20px;
+}
+.footer__legal {
+  margin-left: 10px;
+  margin-top: -20px;
+}
+.footer__contact {
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+/*# sourceMappingURL=style.css.map */

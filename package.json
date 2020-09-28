@@ -1,0 +1,22 @@
+{
+  "name": "p3_kevin_castel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LegoOow/LegoOow.github.io.git"
+  },
+  "keywords": [
+    "GIT#progamer69#"
+  ],
+  "bugs": {
+    "url": "https://github.com/LegoOow/LegoOow.github.io/issues"
+  },
+  "homepage": "https://github.com/LegoOow/LegoOow.github.io#readme",
+  "description": ""
+}

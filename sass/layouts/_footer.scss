@@ -1,0 +1,37 @@
+.footer {
+    width: 375px;
+    height: 190px;
+    background-color: #212121;
+    color: white;
+    margin-left: -8px;
+
+    &__logo {
+        width: 130px;
+        margin-left: $footer-margin;
+        margin-top: 20px;
+    }
+
+    &__suggest {
+        display: flex;
+        flex-direction: row;
+        margin-left: $footer-margin;
+    }
+
+    &__partner {
+        display: flex;
+        flex-direction: row;
+        margin-left: 8px;
+        margin-top: $footer-margin-top;
+    }
+
+    &__legal {
+        margin-left: $footer-margin;
+        margin-top: $footer-margin-top;
+    }
+
+    &__contact {
+        margin-left: $footer-margin;
+        margin-top: -10px;
+    }
+}
+ 

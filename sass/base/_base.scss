@@ -1,0 +1,23 @@
+.bloc_principal {
+    display: flex;
+    width: 375px;
+    flex-direction: column;
+    margin: auto;
+}
+
+h1 {
+    font-style: impact, "rubikregular", arial;
+    font-size: 1.5em;
+}
+
+.margin-logo {
+    margin-top: 18px;
+    margin-right: 10px;
+    margin-left: 1px;
+}
+
+.size_photo {
+    width: 325px;
+    height: 175px;
+    border-radius: 5% 5% 0% 0%;
+}
