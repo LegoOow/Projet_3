@@ -1,0 +1,173 @@
+/*Main*/
+
+.h2 {
+    font-family: 'Secular One', sans-serif;
+}
+.heart_shape {
+    position: absolute;
+    left: 270px;
+    bottom: 30px;
+    color: black;
+}
+
+.bloc_situation {
+    display: flex;
+    flex-direction: row;
+    background-color: #BDBDBD;
+    margin-left: -8px;
+}
+
+.fa-map-marker-alt {
+    margin-left: 8px;
+}
+
+.book {
+    text-align: center;
+    background-color: #EEEEEE;
+    margin-left: -8px;
+    padding-bottom: 40px;
+    padding-top: 5px;
+
+    &__buttons {
+        margin-top: 50px;
+        margin-bottom: 20px;
+
+        &__style {
+            border: 1px solid #b250c4;
+            padding: 20px 20px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            background-color: #b250c4;
+            box-shadow: 1px 1px 15px #BDBDBD;
+        }
+    }
+}
+
+.how {
+    padding-bottom: 25px;
+    padding-left: 4px;
+
+    &__chose {
+        @include buttons_how(#FAFAFA);  
+    }
+    &__create {
+        @include buttons_how(#FAFAFA);
+    }
+    &__go {
+        @include buttons_how(#FAFAFA);
+    }
+}
+
+.restaurants {
+    background-color: #EEEEEE;
+    margin-left: -8px;
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+    
+    &__palette {
+        position: relative;
+        width: 325px;
+        margin-left: 13px;
+        margin-bottom: 15px;
+        padding-bottom: 2px;
+        border-radius: 5%;
+        background-color: white;
+
+        &__button {
+            text-decoration: none;
+        }
+    
+        &__titre {
+            margin-top: -12px;
+            margin-bottom: -15px;
+            margin-left: 8px;
+            color: black;
+        }
+    
+        &__ville {
+            margin-left: 10px;
+            color: black;
+        }
+    }
+
+    &__plate {
+        position: relative;
+        width: 325px;
+        margin-left: 13px;
+        margin-bottom: 15px;
+        padding-bottom: 2px;
+        border-radius: 5%;
+        background-color: white;
+
+        &__button {
+            text-decoration: none;
+        }
+    
+        &__titre {
+            margin-top: -12px;
+            margin-bottom: -15px;
+            margin-left: 8px;
+            color: black;
+        }
+    
+        &__ville {
+            margin-left: 10px;
+            color: black;
+        }
+    }
+
+    &__bastille {
+        position: relative;
+        width: 325px;
+        margin-left: 13px;
+        margin-bottom: 15px;
+        padding-bottom: 2px;
+        border-radius: 5%;
+        background-color: white;
+
+        &__button {
+            text-decoration: none;
+        }
+    
+        &__titre {
+            margin-top: -12px;
+            margin-bottom: -15px;
+            margin-left: 8px;
+            color: black;
+        }
+    
+        &__ville {
+            margin-left: 10px;
+            color: black;
+        }
+    }
+
+    &__gourmand {
+        position: relative;
+        width: 325px;
+        margin-left: 13px;
+        margin-bottom: 15px;
+        padding-bottom: 2px;
+        border-radius: 5%;
+        background-color: white;
+
+        &__button {
+            text-decoration: none;
+        }
+    
+        &__titre {
+            margin-top: -12px;
+            margin-bottom: -15px;
+            margin-left: 8px;
+            color: black;
+        }
+    
+        &__ville {
+            margin-left: 10px;
+            color: black;
+        }
+    }
+}
