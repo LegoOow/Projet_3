@@ -1,0 +1,23 @@
+.button {
+    text-align: center;
+    background-color: #EEEEEE;
+    margin-left: -20px;
+    padding-bottom: 40px;
+    padding-top: 5px;
+
+    &__order {
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+        &__style {
+            border: 1px solid #b250c4;
+            padding: 20px 80px;
+            border-radius: 50px;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            background-color: #b250c4;
+            box-shadow: 1px 1px 15px #BDBDBD;
+        }
+    }
+}

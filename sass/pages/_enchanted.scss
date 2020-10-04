@@ -1,21 +1,21 @@
 
-/*Palette*/
+/*enchanted*/
 
-.heart_palette {
+.heart_enchanted {
     position: absolute;
     top: 35px;
-    left: 250px;
+    left: 300px;
     color: black;
 }
 
-.size_photo_palette {
-    background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-    width: 380px;
+.size_photo_enchanted {
+    background-image: url(images/stil-u2Lp8tXIcjw-unsplash.jpg);
+    width: 375px;
     height: 250px; 
     margin-left: -10px;
 }
 
-.palette {
+.enchanted {
     position: relative;
     border: 2px solid $color-grey;
     width: 375px;
@@ -32,38 +32,50 @@
     &__entree {
         margin-left: 15px;
 
-        &__escargot {
+        &__foie {
             @include buttons_palette(1px);
             
             &__description {
                 @include description_palette;
 
                 &__price {
-                    @include price_palette(80px);
+                    @include price_palette(145px);
                 }
             }
         }
 
-        &__duck {
+        &__oscietra {
             @include buttons_palette(1px);
 
             &__description {
                 @include description_palette;
 
                 &__price {
-                    @include price_palette(90px);
+                    @include price_palette(122px);
                 }
             }
         }
 
-        &__fried {
+        &__lobster {
             @include buttons_palette(1px);
 
             &__description {
                 @include description_palette;
 
                 &__price {
-                    @include price_palette(247px);
+                    @include price_palette(88px);
+                }
+            }
+        }
+
+        &__gras {
+            @include buttons_palette(1px);
+
+            &__description {
+                @include description_palette;
+
+                &__price {
+                    @include price_palette(50px);
                 }
             }
         }
@@ -75,39 +87,38 @@
         margin-top: -20px;
         padding-left: 20px;
 
-        &__herb {
-            @include buttons_palette(0px);
+        &__fresh {
+            @include buttons_palette(1px);
             
             &__description {
                 @include description_palette;
 
                 &__price {
-                    @include price_palette(35px);
-                    padding-top: 20px;
+                    @include price_palette(110px);
                 }
             }
         }
 
-        &__ox {
+        &__pan {
             @include buttons_palette(1px);
 
             &__description {
                 @include description_palette;
 
                 &__price {
-                    @include price_palette(20px);
+                    @include price_palette(85px);
                 }
             }
         }
 
-        &__filet {
+        &__braised {
             @include buttons_palette(1px);
 
             &__description {
                 @include description_palette;
 
                 &__price {
-                    @include price_palette(138px);
+                    @include price_palette(75px);
                 }
             }
         }
@@ -117,39 +128,38 @@
         background-color: #EEEEEE;
         padding-bottom: 30px;
 
-        &__paris {
-            @include buttons_palette(1px);
+        &__hazelnut {
+            @include buttons_palette(0px);
             
             &__description {
                 @include description_palette;
 
                 &__price {
-                    @include price_palette(210px);
+                    @include price_palette(75px);
                 }
             }
         }
 
-        &__macaroons {
+        &__baba {
             @include buttons_palette(1px);
 
             &__description {
                 @include description_palette;
 
                 &__price {
-                    @include price_palette(120px);
+                    @include price_palette(145px);
                 }
             }
         }
 
-        &__mousse {
+        &__lemon {
             @include buttons_palette(1px);
 
             &__description {
                 @include description_palette;
-                margin-right: -50px;
 
                 &__price {
-                    @include price_palette(82px);
+                    @include price_palette(183px);
                 }
             }
         }

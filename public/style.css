@@ -60,7 +60,11 @@ h1 {
   padding-bottom: 40px;
   padding-top: 5px;
 }
-.book__buttons_style {
+.book__buttons {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.book__buttons__style {
   border: 1px solid #b250c4;
   padding: 20px 20px 20px;
   border-radius: 50px;
@@ -69,10 +73,6 @@ h1 {
   color: white;
   background-color: #b250c4;
   box-shadow: 1px 1px 15px #BDBDBD;
-}
-.book__buttons {
-  margin-top: 50px;
-  margin-bottom: 20px;
 }
 
 .how {
@@ -209,6 +209,29 @@ h1 {
   color: black;
 }
 
+.button {
+  text-align: center;
+  background-color: #EEEEEE;
+  margin-left: -20px;
+  padding-bottom: 40px;
+  padding-top: 5px;
+}
+.button__order {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.button__order__style {
+  border: 1px solid #b250c4;
+  padding: 20px 80px;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: #b250c4;
+  box-shadow: 1px 1px 15px #BDBDBD;
+}
+
+/*Palette*/
 .heart_palette {
   position: absolute;
   top: 35px;
@@ -216,7 +239,6 @@ h1 {
   color: black;
 }
 
-/*Palette*/
 .size_photo_palette {
   background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   width: 380px;
@@ -431,6 +453,469 @@ h1 {
 }
 .palette__dessert__mousse__description__price {
   margin-left: 82px;
+}
+
+/*enchanted*/
+.heart_enchanted {
+  position: absolute;
+  top: 35px;
+  left: 300px;
+  color: black;
+}
+
+.size_photo_enchanted {
+  background-image: url(images/stil-u2Lp8tXIcjw-unsplash.jpg);
+  width: 375px;
+  height: 250px;
+  margin-left: -10px;
+}
+
+.enchanted {
+  position: relative;
+  border: 2px solid #EEEEEE;
+  width: 375px;
+  border-radius: 10% 10% 0% 0%;
+  background-color: #EEEEEE;
+  margin-left: -9px;
+  margin-top: -50px;
+}
+.enchanted__titre {
+  margin-top: 30px;
+  margin-left: 15px;
+}
+.enchanted__entree {
+  margin-left: 15px;
+}
+.enchanted__entree__foie {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.enchanted__entree__foie__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.enchanted__entree__foie__description__price {
+  margin-left: 145px;
+}
+.enchanted__entree__oscietra {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.enchanted__entree__oscietra__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.enchanted__entree__oscietra__description__price {
+  margin-left: 122px;
+}
+.enchanted__entree__lobster {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.enchanted__entree__lobster__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.enchanted__entree__lobster__description__price {
+  margin-left: 88px;
+}
+.enchanted__entree__gras {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.enchanted__entree__gras__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.enchanted__entree__gras__description__price {
+  margin-left: 50px;
+}
+.enchanted__maindish {
+  margin-left: -10px;
+  background-color: #EEEEEE;
+  margin-top: -20px;
+  padding-left: 20px;
+}
+.enchanted__maindish__fresh {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.enchanted__maindish__fresh__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.enchanted__maindish__fresh__description__price {
+  margin-left: 110px;
+}
+.enchanted__maindish__pan {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.enchanted__maindish__pan__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.enchanted__maindish__pan__description__price {
+  margin-left: 85px;
+}
+.enchanted__maindish__braised {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.enchanted__maindish__braised__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.enchanted__maindish__braised__description__price {
+  margin-left: 75px;
+}
+.enchanted__dessert {
+  background-color: #EEEEEE;
+  padding-bottom: 30px;
+}
+.enchanted__dessert__hazelnut {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.enchanted__dessert__hazelnut__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.enchanted__dessert__hazelnut__description__price {
+  margin-left: 75px;
+}
+.enchanted__dessert__baba {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.enchanted__dessert__baba__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.enchanted__dessert__baba__description__price {
+  margin-left: 145px;
+}
+.enchanted__dessert__lemon {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.enchanted__dessert__lemon__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.enchanted__dessert__lemon__description__price {
+  margin-left: 183px;
+}
+
+/*gourmand*/
+.heart_gourmand {
+  position: absolute;
+  top: 35px;
+  left: 250px;
+  color: black;
+}
+
+.size_photo_gourmand {
+  background-image: url(images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  width: 380px;
+  height: 260px;
+  margin-left: -10px;
+}
+
+.gourmand {
+  position: relative;
+  border: 2px solid #EEEEEE;
+  width: 400px;
+  border-radius: 10% 10% 0% 0%;
+  background-color: #EEEEEE;
+  margin-left: -23px;
+  margin-top: -50px;
+}
+.gourmand__titre {
+  margin-top: 30px;
+  margin-left: 25px;
+}
+.gourmand__entree {
+  margin-left: 30px;
+}
+.gourmand__entree__tuna {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.gourmand__entree__tuna__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.gourmand__entree__tuna__description__price {
+  margin-left: 140px;
+}
+.gourmand__entree__crunchy {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.gourmand__entree__crunchy__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.gourmand__entree__crunchy__description__price {
+  margin-left: 105px;
+}
+.gourmand__entree__mushroom {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.gourmand__entree__mushroom__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.gourmand__entree__mushroom__description__price {
+  margin-left: 185px;
+}
+.gourmand__maindish {
+  margin-left: 10px;
+  background-color: #EEEEEE;
+  padding-left: 20px;
+}
+.gourmand__maindish__roast {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.gourmand__maindish__roast__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.gourmand__maindish__roast__description__price {
+  margin-left: 150px;
+}
+.gourmand__maindish__roasted {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.gourmand__maindish__roasted__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.gourmand__maindish__roasted__description__price {
+  margin-left: 107px;
+}
+.gourmand__maindish__angust {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.gourmand__maindish__angust__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.gourmand__maindish__angust__description__price {
+  margin-left: 118px;
+}
+.gourmand__dessert {
+  background-color: #EEEEEE;
+  padding-bottom: 30px;
+}
+.gourmand__dessert__assorted {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.gourmand__dessert__assorted__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.gourmand__dessert__assorted__description__price {
+  margin-left: 180px;
+}
+.gourmand__dessert__creme {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.gourmand__dessert__creme__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.gourmand__dessert__creme__description__price {
+  margin-left: 206px;
+}
+.gourmand__dessert__tiramisu {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+}
+.gourmand__dessert__tiramisu__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px;
+}
+.gourmand__dessert__tiramisu__description__price {
+  margin-left: 175px;
 }
 
 .footer {

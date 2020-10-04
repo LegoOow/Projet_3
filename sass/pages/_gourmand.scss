@@ -1,113 +1,111 @@
 
-/*Palette*/
+/*gourmand*/
 
-.heart_palette {
+.heart_gourmand {
     position: absolute;
     top: 35px;
     left: 250px;
     color: black;
 }
 
-.size_photo_palette {
-    background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+.size_photo_gourmand {
+    background-image: url(images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
     width: 380px;
-    height: 250px; 
+    height: 260px; 
     margin-left: -10px;
 }
 
-.palette {
+.gourmand {
     position: relative;
     border: 2px solid $color-grey;
-    width: 375px;
+    width: 400px;
     border-radius: 10% 10% 0% 0%;
     background-color: $color-grey;
-    margin-left: -9px;
+    margin-left: -23px;
     margin-top: -50px;
 
     &__titre {
         margin-top: 30px;
-        margin-left: 15px;
+        margin-left: 25px;
     }
 
     &__entree {
-        margin-left: 15px;
+        margin-left: 30px;
 
-        &__escargot {
+        &__tuna {
             @include buttons_palette(1px);
             
             &__description {
                 @include description_palette;
 
                 &__price {
-                    @include price_palette(80px);
+                    @include price_palette(140px);
                 }
             }
         }
 
-        &__duck {
+        &__crunchy {
             @include buttons_palette(1px);
 
             &__description {
                 @include description_palette;
 
                 &__price {
-                    @include price_palette(90px);
+                    @include price_palette(105px);
                 }
             }
         }
 
-        &__fried {
+        &__mushroom {
             @include buttons_palette(1px);
 
             &__description {
                 @include description_palette;
 
                 &__price {
-                    @include price_palette(247px);
+                    @include price_palette(185px);
                 }
             }
         }
     }
 
     &__maindish {
-        margin-left: -10px;
+        margin-left: 10px;
         background-color: #EEEEEE;
-        margin-top: -20px;
         padding-left: 20px;
 
-        &__herb {
+        &__roast {
             @include buttons_palette(0px);
             
             &__description {
                 @include description_palette;
 
                 &__price {
-                    @include price_palette(35px);
-                    padding-top: 20px;
+                    @include price_palette(150px);
                 }
             }
         }
 
-        &__ox {
+        &__roasted {
             @include buttons_palette(1px);
 
             &__description {
                 @include description_palette;
 
                 &__price {
-                    @include price_palette(20px);
+                    @include price_palette(107px);
                 }
             }
         }
 
-        &__filet {
+        &__angust {
             @include buttons_palette(1px);
 
             &__description {
                 @include description_palette;
 
                 &__price {
-                    @include price_palette(138px);
+                    @include price_palette(118px);
                 }
             }
         }
@@ -117,39 +115,38 @@
         background-color: #EEEEEE;
         padding-bottom: 30px;
 
-        &__paris {
+        &__assorted {
             @include buttons_palette(1px);
             
             &__description {
                 @include description_palette;
 
                 &__price {
-                    @include price_palette(210px);
+                    @include price_palette(180px);
                 }
             }
         }
 
-        &__macaroons {
+        &__creme {
             @include buttons_palette(1px);
 
             &__description {
                 @include description_palette;
 
                 &__price {
-                    @include price_palette(120px);
+                    @include price_palette(206px);
                 }
             }
         }
 
-        &__mousse {
+        &__tiramisu {
             @include buttons_palette(1px);
 
             &__description {
                 @include description_palette;
-                margin-right: -50px;
 
                 &__price {
-                    @include price_palette(82px);
+                    @include price_palette(175px);
                 }
             }
         }
