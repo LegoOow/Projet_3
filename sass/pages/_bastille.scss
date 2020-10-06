@@ -1,0 +1,154 @@
+
+/*bastille*/
+
+.heart_bastille {
+    position: absolute;
+    top: 35px;
+    left: 250px;
+    color: black;
+}
+
+.size_photo_bastille {
+    background-image: url(images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    width: 380px;
+    height: 260px; 
+    margin-left: -10px;
+}
+
+.bastille {
+    position: relative;
+    border: 2px solid $color-grey;
+    width: 400px;
+    border-radius: 10% 10% 0% 0%;
+    background-color: $color-grey;
+    margin-left: -23px;
+    margin-top: -50px;
+
+    &__titre {
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+
+    &__entree {
+        margin-left: 30px;
+
+        &__citrus {
+            @include buttons_palette(1px);
+            
+            &__description {
+                @include description_palette;
+
+                &__price {
+                    @include price_palette(160px);
+                }
+            }
+        }
+
+        &__grandmother {
+            @include buttons_palette(1px);
+
+            &__description {
+                @include description_palette;
+
+                &__price {
+                    @include price_palette(22px);
+                }
+            }
+        }
+
+        &__onion {
+            @include buttons_palette(1px);
+
+            &__description {
+                @include description_palette;
+
+                &__price {
+                    @include price_palette(205px);
+                }
+            }
+        }
+    }
+
+    &__maindish {
+        margin-left: 10px;
+        background-color: #EEEEEE;
+        padding-left: 20px;
+
+        &__scallops {
+            @include buttons_palette(1px);
+            
+            &__description {
+                @include description_palette;
+
+                &__price {
+                    @include price_palette(127px);
+                }
+            }
+        }
+
+        &__magret {
+            @include buttons_palette(1px);
+
+            &__description {
+                @include description_palette;
+
+                &__price {
+                    @include price_palette(107px);
+                }
+            }
+        }
+
+        &__game {
+            @include buttons_palette(1px);
+
+            &__description {
+                @include description_palette;
+
+                &__price {
+                    @include price_palette(111px);
+                }
+            }
+        }
+    }
+
+    &__dessert {
+        background-color: #EEEEEE;
+        padding-bottom: 30px;
+
+        &__floral {
+            @include buttons_palette(1px);
+            
+            &__description {
+                @include description_palette;
+
+                &__price {
+                    @include price_palette(133px);
+                }
+            }
+        }
+
+        &__lava {
+            @include buttons_palette(1px);
+
+            &__description {
+                @include description_palette;
+
+                &__price {
+                    @include price_palette(206px);
+                }
+            }
+        }
+
+        &__napolean {
+            @include buttons_palette(1px);
+
+            &__description {
+                @include description_palette;
+
+                &__price {
+                    @include price_palette(75px);
+                }
+            }
+        }
+    }
+}
