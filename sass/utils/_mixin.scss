@@ -1,6 +1,7 @@
 @mixin buttons_how($colour) {
         display: flex;
         flex-direction: row;
+        position: relative;
         background-color: $colour;
         width: 300px;
         padding: 0px 20px 0px;
@@ -8,6 +9,18 @@
         margin-left: 5px;
         margin-bottom: 20px;
         box-shadow: 1px 1px 15px #EEEEEE;  
+}
+
+@mixin buttons_how_number {
+        position: absolute;
+        left: -8px;
+        border: 1px solid #b250c4;
+        border-radius: 100%;
+        background-color: #b250c4;
+        color: white;
+        font-size: 0.9em;
+        padding-left: 5px;
+        padding-right: 5px;
 }
 
 @mixin buttons_palette($padding-top) {
@@ -21,16 +34,34 @@
         margin-left: 5px;
         margin-bottom: 20px;
         box-shadow: 1px 1px 15px #EEEEEE;
+        position: relative;
+        cursor: pointer;
+        &:active + .box {
+                transform: translate(-50px);
+        }
+}
+
+.box {
+        position: absolute;
+        left: 315px;
+        width: 40px;
+        height: 70px;
+        bottom: 1px;
+        border-radius: 10px;
+        background-color: green;
+        transition: transform 330ms ease-in-out;
 }
 
 @mixin description_palette {
         display: flex;
         flex-direction: row;
-        margin-top: -35px;
+        margin-top: -30px;
+        font-size: 0.9em;
 }
 
 @mixin price_palette($margin-price) {
         margin-left: $margin-price;
+
 }
 
 @mixin menu_position {
