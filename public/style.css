@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@900&display=swap");
+.box {
+  position: absolute;
+  left: 315px;
+  width: 40px;
+  height: 70px;
+  bottom: 1px;
+  border-radius: 10px;
+  background-color: green;
+  transition: transform 330ms ease-in-out;
+}
+
 .bloc_principal {
   display: flex;
   width: 375px;
@@ -7,14 +20,28 @@
 }
 
 h1 {
-  font-style: impact, "rubikregular", arial;
+  font-family: "Sansita Swashed", cursive;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   font-size: 1.5em;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+h4 {
+  font-family: "Secular One", sans-serif;
+  font-size: 1.2em;
 }
 
 .margin-logo {
   margin-top: 18px;
   margin-right: 10px;
-  margin-left: 1px;
+  margin-left: 10px;
 }
 
 .size_photo {
@@ -29,15 +56,18 @@ h1 {
 }
 
 /*Main*/
-h2 {
-  font-family: "Secular One", sans-serif;
-}
-
 .heart_shape {
   position: absolute;
+  font-size: 20px;
   left: 270px;
   bottom: 30px;
+}
+
+.fa-heart {
   color: black;
+}
+.fa-heart:active {
+  color: red;
 }
 
 .bloc_situation {
@@ -80,6 +110,7 @@ h2 {
 .how__chose {
   display: flex;
   flex-direction: row;
+  position: relative;
   background-color: #FAFAFA;
   width: 300px;
   padding: 0px 20px 0px;
@@ -87,10 +118,22 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+}
+.how__chose__number {
+  position: absolute;
+  left: -8px;
+  border: 1px solid #b250c4;
+  border-radius: 100%;
+  background-color: #b250c4;
+  color: white;
+  font-size: 0.9em;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .how__create {
   display: flex;
   flex-direction: row;
+  position: relative;
   background-color: #FAFAFA;
   width: 300px;
   padding: 0px 20px 0px;
@@ -99,9 +142,21 @@ h2 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
 }
+.how__create__number {
+  position: absolute;
+  left: -8px;
+  border: 1px solid #b250c4;
+  border-radius: 100%;
+  background-color: #b250c4;
+  color: white;
+  font-size: 0.9em;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 .how__go {
   display: flex;
   flex-direction: row;
+  position: relative;
   background-color: #FAFAFA;
   width: 300px;
   padding: 0px 20px 0px;
@@ -109,6 +164,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+}
+.how__go__number {
+  position: absolute;
+  left: -8px;
+  border: 1px solid #b250c4;
+  border-radius: 100%;
+  background-color: #b250c4;
+  color: white;
+  font-size: 0.9em;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .restaurants {
@@ -140,7 +206,7 @@ h2 {
   margin-left: 10px;
   color: black;
 }
-.restaurants__plate {
+.restaurants__enchanted {
   position: relative;
   width: 325px;
   margin-left: 13px;
@@ -149,16 +215,16 @@ h2 {
   border-radius: 5%;
   background-color: white;
 }
-.restaurants__plate__button {
+.restaurants__enchanted__button {
   text-decoration: none;
 }
-.restaurants__plate__titre {
+.restaurants__enchanted__titre {
   margin-top: -12px;
   margin-bottom: -15px;
   margin-left: 8px;
   color: black;
 }
-.restaurants__plate__ville {
+.restaurants__enchanted__ville {
   margin-left: 10px;
   color: black;
 }
@@ -232,6 +298,7 @@ h2 {
 /*Palette*/
 .heart_palette {
   position: absolute;
+  font-size: 20px;
   top: 35px;
   left: 250px;
   color: black;
@@ -271,11 +338,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.palette__entree__escargot:active + .box {
+  transform: translate(-50px);
 }
 .palette__entree__escargot__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .palette__entree__escargot__description__price {
   margin-left: 80px;
@@ -291,11 +364,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.palette__entree__duck:active + .box {
+  transform: translate(-50px);
 }
 .palette__entree__duck__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .palette__entree__duck__description__price {
   margin-left: 90px;
@@ -311,11 +390,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.palette__entree__fried:active + .box {
+  transform: translate(-50px);
 }
 .palette__entree__fried__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .palette__entree__fried__description__price {
   margin-left: 247px;
@@ -337,11 +422,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.palette__maindish__herb:active + .box {
+  transform: translate(-50px);
 }
 .palette__maindish__herb__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .palette__maindish__herb__description__price {
   margin-left: 35px;
@@ -358,11 +449,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.palette__maindish__ox:active + .box {
+  transform: translate(-50px);
 }
 .palette__maindish__ox__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .palette__maindish__ox__description__price {
   margin-left: 20px;
@@ -378,11 +475,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.palette__maindish__filet:active + .box {
+  transform: translate(-50px);
 }
 .palette__maindish__filet__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .palette__maindish__filet__description__price {
   margin-left: 138px;
@@ -402,11 +505,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.palette__dessert__paris:active + .box {
+  transform: translate(-50px);
 }
 .palette__dessert__paris__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .palette__dessert__paris__description__price {
   margin-left: 210px;
@@ -422,11 +531,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.palette__dessert__macaroons:active + .box {
+  transform: translate(-50px);
 }
 .palette__dessert__macaroons__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .palette__dessert__macaroons__description__price {
   margin-left: 120px;
@@ -442,11 +557,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.palette__dessert__mousse:active + .box {
+  transform: translate(-50px);
 }
 .palette__dessert__mousse__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
   margin-right: -50px;
 }
 .palette__dessert__mousse__description__price {
@@ -456,6 +577,7 @@ h2 {
 /*enchanted*/
 .heart_enchanted {
   position: absolute;
+  font-size: 20px;
   top: 35px;
   left: 300px;
   color: black;
@@ -495,11 +617,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.enchanted__entree__foie:active + .box {
+  transform: translate(-50px);
 }
 .enchanted__entree__foie__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .enchanted__entree__foie__description__price {
   margin-left: 145px;
@@ -515,11 +643,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.enchanted__entree__oscietra:active + .box {
+  transform: translate(-50px);
 }
 .enchanted__entree__oscietra__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .enchanted__entree__oscietra__description__price {
   margin-left: 122px;
@@ -535,11 +669,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.enchanted__entree__lobster:active + .box {
+  transform: translate(-50px);
 }
 .enchanted__entree__lobster__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .enchanted__entree__lobster__description__price {
   margin-left: 88px;
@@ -555,11 +695,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.enchanted__entree__gras:active + .box {
+  transform: translate(-50px);
 }
 .enchanted__entree__gras__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .enchanted__entree__gras__description__price {
   margin-left: 50px;
@@ -581,11 +727,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.enchanted__maindish__fresh:active + .box {
+  transform: translate(-50px);
 }
 .enchanted__maindish__fresh__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .enchanted__maindish__fresh__description__price {
   margin-left: 110px;
@@ -601,11 +753,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.enchanted__maindish__pan:active + .box {
+  transform: translate(-50px);
 }
 .enchanted__maindish__pan__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .enchanted__maindish__pan__description__price {
   margin-left: 85px;
@@ -621,11 +779,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.enchanted__maindish__braised:active + .box {
+  transform: translate(-50px);
 }
 .enchanted__maindish__braised__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .enchanted__maindish__braised__description__price {
   margin-left: 75px;
@@ -645,11 +809,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.enchanted__dessert__hazelnut:active + .box {
+  transform: translate(-50px);
 }
 .enchanted__dessert__hazelnut__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .enchanted__dessert__hazelnut__description__price {
   margin-left: 75px;
@@ -665,11 +835,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.enchanted__dessert__baba:active + .box {
+  transform: translate(-50px);
 }
 .enchanted__dessert__baba__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .enchanted__dessert__baba__description__price {
   margin-left: 145px;
@@ -685,11 +861,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.enchanted__dessert__lemon:active + .box {
+  transform: translate(-50px);
 }
 .enchanted__dessert__lemon__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .enchanted__dessert__lemon__description__price {
   margin-left: 183px;
@@ -698,6 +880,7 @@ h2 {
 /*gourmand*/
 .heart_gourmand {
   position: absolute;
+  font-size: 20px;
   top: 35px;
   left: 250px;
   color: black;
@@ -737,11 +920,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.gourmand__entree__tuna:active + .box {
+  transform: translate(-50px);
 }
 .gourmand__entree__tuna__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .gourmand__entree__tuna__description__price {
   margin-left: 140px;
@@ -757,11 +946,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.gourmand__entree__crunchy:active + .box {
+  transform: translate(-50px);
 }
 .gourmand__entree__crunchy__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .gourmand__entree__crunchy__description__price {
   margin-left: 105px;
@@ -777,11 +972,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.gourmand__entree__mushroom:active + .box {
+  transform: translate(-50px);
 }
 .gourmand__entree__mushroom__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .gourmand__entree__mushroom__description__price {
   margin-left: 185px;
@@ -802,11 +1003,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.gourmand__maindish__roast:active + .box {
+  transform: translate(-50px);
 }
 .gourmand__maindish__roast__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .gourmand__maindish__roast__description__price {
   margin-left: 150px;
@@ -822,11 +1029,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.gourmand__maindish__roasted:active + .box {
+  transform: translate(-50px);
 }
 .gourmand__maindish__roasted__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .gourmand__maindish__roasted__description__price {
   margin-left: 107px;
@@ -842,11 +1055,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.gourmand__maindish__angust:active + .box {
+  transform: translate(-50px);
 }
 .gourmand__maindish__angust__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .gourmand__maindish__angust__description__price {
   margin-left: 118px;
@@ -866,11 +1085,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.gourmand__dessert__assorted:active + .box {
+  transform: translate(-50px);
 }
 .gourmand__dessert__assorted__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .gourmand__dessert__assorted__description__price {
   margin-left: 180px;
@@ -886,11 +1111,17 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.gourmand__dessert__creme:active + .box {
+  transform: translate(-50px);
 }
 .gourmand__dessert__creme__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .gourmand__dessert__creme__description__price {
   margin-left: 206px;
@@ -906,14 +1137,296 @@ h2 {
   margin-left: 5px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.gourmand__dessert__tiramisu:active + .box {
+  transform: translate(-50px);
 }
 .gourmand__dessert__tiramisu__description {
   display: flex;
   flex-direction: row;
-  margin-top: -35px;
+  margin-top: -30px;
+  font-size: 0.9em;
 }
 .gourmand__dessert__tiramisu__description__price {
   margin-left: 175px;
+}
+
+/*bastille*/
+.heart_bastille {
+  position: absolute;
+  font-size: 20px;
+  top: 35px;
+  left: 250px;
+  color: black;
+}
+
+.size_photo_bastille {
+  background-image: url(images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  width: 380px;
+  height: 260px;
+  margin-left: -10px;
+}
+
+.bastille {
+  position: relative;
+  border: 2px solid #EEEEEE;
+  width: 400px;
+  border-radius: 10% 10% 0% 0%;
+  background-color: #EEEEEE;
+  margin-left: -23px;
+  margin-top: -50px;
+}
+.bastille__titre {
+  margin-top: 30px;
+  margin-left: 25px;
+}
+.bastille__entree {
+  margin-left: 30px;
+}
+.bastille__entree__citrus {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.bastille__entree__citrus:active + .box {
+  transform: translate(-50px);
+}
+.bastille__entree__citrus__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -30px;
+  font-size: 0.9em;
+}
+.bastille__entree__citrus__description__price {
+  margin-left: 160px;
+}
+.bastille__entree__grandmother {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.bastille__entree__grandmother:active + .box {
+  transform: translate(-50px);
+}
+.bastille__entree__grandmother__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -30px;
+  font-size: 0.9em;
+}
+.bastille__entree__grandmother__description__price {
+  margin-left: 22px;
+}
+.bastille__entree__onion {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.bastille__entree__onion:active + .box {
+  transform: translate(-50px);
+}
+.bastille__entree__onion__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -30px;
+  font-size: 0.9em;
+}
+.bastille__entree__onion__description__price {
+  margin-left: 205px;
+}
+.bastille__maindish {
+  margin-left: 10px;
+  background-color: #EEEEEE;
+  padding-left: 20px;
+}
+.bastille__maindish__scallops {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.bastille__maindish__scallops:active + .box {
+  transform: translate(-50px);
+}
+.bastille__maindish__scallops__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -30px;
+  font-size: 0.9em;
+}
+.bastille__maindish__scallops__description__price {
+  margin-left: 127px;
+}
+.bastille__maindish__magret {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.bastille__maindish__magret:active + .box {
+  transform: translate(-50px);
+}
+.bastille__maindish__magret__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -30px;
+  font-size: 0.9em;
+}
+.bastille__maindish__magret__description__price {
+  margin-left: 107px;
+}
+.bastille__maindish__game {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.bastille__maindish__game:active + .box {
+  transform: translate(-50px);
+}
+.bastille__maindish__game__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -30px;
+  font-size: 0.9em;
+}
+.bastille__maindish__game__description__price {
+  margin-left: 111px;
+}
+.bastille__dessert {
+  background-color: #EEEEEE;
+  padding-bottom: 30px;
+}
+.bastille__dessert__floral {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.bastille__dessert__floral:active + .box {
+  transform: translate(-50px);
+}
+.bastille__dessert__floral__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -30px;
+  font-size: 0.9em;
+}
+.bastille__dessert__floral__description__price {
+  margin-left: 133px;
+}
+.bastille__dessert__lava {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.bastille__dessert__lava:active + .box {
+  transform: translate(-50px);
+}
+.bastille__dessert__lava__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -30px;
+  font-size: 0.9em;
+}
+.bastille__dessert__lava__description__price {
+  margin-left: 206px;
+}
+.bastille__dessert__napolean {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 15px #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.bastille__dessert__napolean:active + .box {
+  transform: translate(-50px);
+}
+.bastille__dessert__napolean__description {
+  display: flex;
+  flex-direction: row;
+  margin-top: -30px;
+  font-size: 0.9em;
+}
+.bastille__dessert__napolean__description__price {
+  margin-left: 75px;
 }
 
 .footer {
@@ -922,30 +1435,32 @@ h2 {
   background-color: #212121;
   color: white;
   margin-left: -8px;
+  font-weight: bold;
+  font-size: 0.8em;
 }
 .footer__logo {
-  width: 130px;
-  margin-left: 10px;
+  width: 90px;
+  margin-left: 25px;
   margin-top: 20px;
 }
 .footer__suggest {
   display: flex;
   flex-direction: row;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .footer__partner {
   display: flex;
   flex-direction: row;
-  margin-left: 8px;
-  margin-top: -20px;
+  margin-left: 12px;
+  margin-top: -15px;
 }
 .footer__legal {
-  margin-left: 10px;
-  margin-top: -20px;
+  margin-left: 25px;
+  margin-top: -15px;
 }
 .footer__contact {
-  margin-left: 10px;
-  margin-top: -10px;
+  margin-left: 25px;
+  margin-top: -5px;
 }
 
 /*# sourceMappingURL=style.css.map */

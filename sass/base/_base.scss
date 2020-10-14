@@ -6,14 +6,28 @@
 }
 
 h1 {
-    font-style: impact, "rubikregular", arial;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     font-size: 1.5em;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.2em;
 }
 
 .margin-logo {
     margin-top: 18px;
     margin-right: 10px;
-    margin-left: 1px;
+    margin-left: 10px;
 }
 
 .size_photo {
@@ -21,3 +35,4 @@ h1 {
     height: 175px;
     border-radius: 5% 5% 0% 0%;
 }
+
