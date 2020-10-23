@@ -1,13 +1,16 @@
+
 .footer {
     width: 375px;
     height: 190px;
     background-color: #212121;
     color: white;
     margin-left: -8px;
+    font-weight: bold;
+    font-size: 0.8em;
 
     &__logo {
-        width: 130px;
-        margin-left: $footer-margin;
+        width: 90px;
+        margin-left: 25px;
         margin-top: 20px;
     }
 
@@ -20,18 +23,18 @@
     &__partner {
         display: flex;
         flex-direction: row;
-        margin-left: 8px;
+        margin-left: 12px;
         margin-top: $footer-margin-top;
     }
 
     &__legal {
-        margin-left: $footer-margin;
+        margin-left: 25px;
         margin-top: $footer-margin-top;
     }
 
     &__contact {
-        margin-left: $footer-margin;
-        margin-top: -10px;
+        margin-left: 25px;
+        margin-top: -5px;
     }
 }
  

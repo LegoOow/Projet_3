@@ -3,6 +3,7 @@
 
 .heart_gourmand {
     position: absolute;
+    font-size: 20px;
     top: 35px;
     left: 250px;
     color: black;
@@ -33,7 +34,7 @@
         margin-left: 30px;
 
         &__tuna {
-            @include buttons_palette(1px);
+            @include buttons_palette;
             
             &__description {
                 @include description_palette;
@@ -45,7 +46,7 @@
         }
 
         &__crunchy {
-            @include buttons_palette(1px);
+            @include buttons_palette;
 
             &__description {
                 @include description_palette;
@@ -57,7 +58,7 @@
         }
 
         &__mushroom {
-            @include buttons_palette(1px);
+            @include buttons_palette;
 
             &__description {
                 @include description_palette;
@@ -75,7 +76,7 @@
         padding-left: 20px;
 
         &__roast {
-            @include buttons_palette(0px);
+            @include buttons_palette;
             
             &__description {
                 @include description_palette;
@@ -87,7 +88,7 @@
         }
 
         &__roasted {
-            @include buttons_palette(1px);
+            @include buttons_palette;
 
             &__description {
                 @include description_palette;
@@ -99,7 +100,7 @@
         }
 
         &__angust {
-            @include buttons_palette(1px);
+            @include buttons_palette;
 
             &__description {
                 @include description_palette;
@@ -116,7 +117,7 @@
         padding-bottom: 30px;
 
         &__assorted {
-            @include buttons_palette(1px);
+            @include buttons_palette;
             
             &__description {
                 @include description_palette;
@@ -128,7 +129,7 @@
         }
 
         &__creme {
-            @include buttons_palette(1px);
+            @include buttons_palette;
 
             &__description {
                 @include description_palette;
@@ -140,7 +141,7 @@
         }
 
         &__tiramisu {
-            @include buttons_palette(1px);
+            @include buttons_palette;
 
             &__description {
                 @include description_palette;

@@ -4,10 +4,12 @@
 @import "./base/base";
 
 @import "./layouts/header";
-@import "./pages/main";
+@import "./pages/index";
 @import "./pages/order";
 @import "./pages/palette";
 @import "./pages/enchanted";
 @import "./pages/gourmand";
+@import "./pages/bastille";
 @import "./layouts/footer";
+@import "./utils/responsive";
 

@@ -1,0 +1,23 @@
+@media screen and (max-height: 480px) {
+        .palette {
+
+            &__entree {
+            width: 360px;
+            }
+            &__maindish {
+                width: 360px;
+            }
+        }
+
+        .size_photo_palette {
+            background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+            width: 378px;
+            height: 250px; 
+            margin-left: -9px;
+        }
+
+        .button {
+            width: 365px;
+            margin-left: 1px;
+        }
+    }

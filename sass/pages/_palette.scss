@@ -3,6 +3,7 @@
 
 .heart_palette {
     position: absolute;
+    font-size: 20px;
     top: 35px;
     left: 250px;
     color: black;
@@ -33,38 +34,38 @@
         margin-left: 15px;
 
         &__escargot {
-            @include buttons_palette(1px);
+            @include buttons_palette;
             
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(80px);
-                }
+            &__price {
+                @include price_palette(80px);
             }
         }
 
         &__duck {
-            @include buttons_palette(1px);
+            @include buttons_palette;
 
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(90px);
-                }
+            &__price {
+                @include price_palette(95px);
             }
         }
 
         &__fried {
-            @include buttons_palette(1px);
+            @include buttons_palette;
 
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(247px);
-                }
+            &__price {
+                @include price_palette(190px);
             }
         }
     }
@@ -76,39 +77,38 @@
         padding-left: 20px;
 
         &__herb {
-            @include buttons_palette(0px);
+            @include buttons_palette;
             
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(35px);
-                    padding-top: 20px;
-                }
+            &__price {
+                @include price_palette(35px);
             }
         }
 
         &__ox {
-            @include buttons_palette(1px);
+            @include buttons_palette;
 
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(20px);
-                }
+            &__price {
+                @include price_palette(20px);
             }
         }
 
         &__filet {
-            @include buttons_palette(1px);
+            @include buttons_palette;
 
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(138px);
-                }
+            &__price {
+                @include price_palette(138px);
             }
         }
     }
@@ -118,39 +118,38 @@
         padding-bottom: 30px;
 
         &__paris {
-            @include buttons_palette(1px);
+            @include buttons_palette;
             
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(210px);
-                }
+            &__price {
+                @include price_palette(180px);
             }
         }
 
         &__macaroons {
-            @include buttons_palette(1px);
+            @include buttons_palette;
 
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(120px);
-                }
+            &__price {
+                @include price_palette(105px);
             }
         }
 
         &__mousse {
-            @include buttons_palette(1px);
+            @include buttons_palette;
 
             &__description {
                 @include description_palette;
-                margin-right: -50px;
+            }
 
-                &__price {
-                    @include price_palette(82px);
-                }
+            &__price {
+                @include price_palette(82px);
             }
         }
     }
