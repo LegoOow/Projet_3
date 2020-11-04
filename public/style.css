@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@900&display=swap");
+@keyframes fondu {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .box {
   width: 50px;
   position: relative;
@@ -8,7 +19,6 @@
   height: 100%;
   background-color: green;
   border-radius: 10%;
-  transition: transform 1000ms ease-in-out;
 }
 
 .fa-check {
@@ -18,17 +28,14 @@
   background-color: white;
   border-radius: 50%;
   padding: 3px;
-  transform: rotate(-1turn);
-  transition: transform 1000ms ease-in-out;
-}
-.fa-check:active {
   transform: rotate(0turn);
+  transition: transform 500ms ease-in-out;
 }
 
 .bloc_principal {
   display: flex;
-  width: 375px;
   flex-direction: column;
+  width: 375px;
   margin: auto;
 }
 
@@ -316,25 +323,24 @@ h4 {
 .heart_palette {
   position: absolute;
   font-size: 20px;
-  top: 35px;
-  left: 250px;
+  top: 45px;
+  left: 320px;
   color: black;
 }
 
 .size_photo_palette {
-  background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  width: 380px;
+  width: 400px;
   height: 250px;
   margin-left: -10px;
+  background: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;
 }
 
 .palette {
   position: relative;
   border: 2px solid #EEEEEE;
-  width: 375px;
-  border-radius: 10% 10% 0% 0%;
+  border-radius: 6% 6% 0% 0%;
   background-color: #EEEEEE;
-  margin-left: -9px;
+  margin-left: -15px;
   margin-top: -50px;
 }
 .palette__titre {
@@ -342,7 +348,7 @@ h4 {
   margin-left: 15px;
 }
 .palette__entree {
-  margin-left: 15px;
+  margin-left: 20px;
 }
 .palette__entree__escargot {
   background-color: white;
@@ -355,9 +361,9 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.palette__entree__escargot:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
+  animation: fondu 1000ms 150ms forwards;
 }
 .palette__entree__escargot__description {
   display: flex;
@@ -369,6 +375,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.palette__entree__escargot__price:hover {
+  transform: translateX(-68%);
+}
+.palette__entree__escargot__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .palette__entree__duck {
   background-color: white;
@@ -381,9 +394,9 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.palette__entree__duck:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
+  animation: fondu 1000ms 1000ms forwards;
 }
 .palette__entree__duck__description {
   display: flex;
@@ -395,6 +408,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.palette__entree__duck__price:hover {
+  transform: translateX(-68%);
+}
+.palette__entree__duck__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .palette__entree__fried {
   background-color: white;
@@ -407,9 +427,9 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.palette__entree__fried:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
+  animation: fondu 1000ms 1500ms forwards;
 }
 .palette__entree__fried__description {
   display: flex;
@@ -421,12 +441,18 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.palette__entree__fried__price:hover {
+  transform: translateX(-68%);
+}
+.palette__entree__fried__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .palette__maindish {
-  margin-left: -10px;
   background-color: #EEEEEE;
-  margin-top: -20px;
-  padding-left: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 .palette__maindish__herb {
   background-color: white;
@@ -439,9 +465,9 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.palette__maindish__herb:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
+  animation: fondu 1000ms 150ms forwards;
 }
 .palette__maindish__herb__description {
   display: flex;
@@ -453,6 +479,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.palette__maindish__herb__price:hover {
+  transform: translateX(-68%);
+}
+.palette__maindish__herb__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .palette__maindish__ox {
   background-color: white;
@@ -465,9 +498,9 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.palette__maindish__ox:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
+  animation: fondu 1000ms 1000ms forwards;
 }
 .palette__maindish__ox__description {
   display: flex;
@@ -479,6 +512,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.palette__maindish__ox__price:hover {
+  transform: translateX(-68%);
+}
+.palette__maindish__ox__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .palette__maindish__filet {
   background-color: white;
@@ -491,9 +531,9 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.palette__maindish__filet:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
+  animation: fondu 1000ms 1500ms forwards;
 }
 .palette__maindish__filet__description {
   display: flex;
@@ -505,10 +545,18 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.palette__maindish__filet__price:hover {
+  transform: translateX(-68%);
+}
+.palette__maindish__filet__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .palette__dessert {
   background-color: #EEEEEE;
   padding-bottom: 30px;
+  margin-left: 20px;
 }
 .palette__dessert__paris {
   background-color: white;
@@ -521,9 +569,9 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.palette__dessert__paris:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
+  animation: fondu 1000ms 150ms forwards;
 }
 .palette__dessert__paris__description {
   display: flex;
@@ -535,6 +583,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.palette__dessert__paris__price:hover {
+  transform: translateX(-68%);
+}
+.palette__dessert__paris__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .palette__dessert__macaroons {
   background-color: white;
@@ -547,9 +602,9 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.palette__dessert__macaroons:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
+  animation: fondu 1000ms 1000ms forwards;
 }
 .palette__dessert__macaroons__description {
   display: flex;
@@ -561,6 +616,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.palette__dessert__macaroons__price:hover {
+  transform: translateX(-68%);
+}
+.palette__dessert__macaroons__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .palette__dessert__mousse {
   background-color: white;
@@ -573,9 +635,9 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.palette__dessert__mousse:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
+  animation: fondu 1000ms 1500ms forwards;
 }
 .palette__dessert__mousse__description {
   display: flex;
@@ -587,6 +649,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.palette__dessert__mousse__price:hover {
+  transform: translateX(-68%);
+}
+.palette__dessert__mousse__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 
 /*enchanted*/
@@ -632,9 +701,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.enchanted__entree__foie:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .enchanted__entree__foie__description {
   display: flex;
@@ -646,6 +714,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.enchanted__entree__foie__description__price:hover {
+  transform: translateX(-68%);
+}
+.enchanted__entree__foie__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .enchanted__entree__oscietra {
   background-color: white;
@@ -658,9 +733,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.enchanted__entree__oscietra:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .enchanted__entree__oscietra__description {
   display: flex;
@@ -672,6 +746,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.enchanted__entree__oscietra__description__price:hover {
+  transform: translateX(-68%);
+}
+.enchanted__entree__oscietra__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .enchanted__entree__lobster {
   background-color: white;
@@ -684,9 +765,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.enchanted__entree__lobster:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .enchanted__entree__lobster__description {
   display: flex;
@@ -698,6 +778,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.enchanted__entree__lobster__description__price:hover {
+  transform: translateX(-68%);
+}
+.enchanted__entree__lobster__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .enchanted__entree__gras {
   background-color: white;
@@ -710,9 +797,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.enchanted__entree__gras:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .enchanted__entree__gras__description {
   display: flex;
@@ -724,6 +810,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.enchanted__entree__gras__description__price:hover {
+  transform: translateX(-68%);
+}
+.enchanted__entree__gras__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .enchanted__maindish {
   margin-left: -10px;
@@ -742,9 +835,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.enchanted__maindish__fresh:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .enchanted__maindish__fresh__description {
   display: flex;
@@ -756,6 +848,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.enchanted__maindish__fresh__description__price:hover {
+  transform: translateX(-68%);
+}
+.enchanted__maindish__fresh__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .enchanted__maindish__pan {
   background-color: white;
@@ -768,9 +867,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.enchanted__maindish__pan:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .enchanted__maindish__pan__description {
   display: flex;
@@ -782,6 +880,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.enchanted__maindish__pan__description__price:hover {
+  transform: translateX(-68%);
+}
+.enchanted__maindish__pan__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .enchanted__maindish__braised {
   background-color: white;
@@ -794,9 +899,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.enchanted__maindish__braised:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .enchanted__maindish__braised__description {
   display: flex;
@@ -808,6 +912,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.enchanted__maindish__braised__description__price:hover {
+  transform: translateX(-68%);
+}
+.enchanted__maindish__braised__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .enchanted__dessert {
   background-color: #EEEEEE;
@@ -824,9 +935,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.enchanted__dessert__hazelnut:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .enchanted__dessert__hazelnut__description {
   display: flex;
@@ -838,6 +948,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.enchanted__dessert__hazelnut__description__price:hover {
+  transform: translateX(-68%);
+}
+.enchanted__dessert__hazelnut__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .enchanted__dessert__baba {
   background-color: white;
@@ -850,9 +967,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.enchanted__dessert__baba:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .enchanted__dessert__baba__description {
   display: flex;
@@ -864,6 +980,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.enchanted__dessert__baba__description__price:hover {
+  transform: translateX(-68%);
+}
+.enchanted__dessert__baba__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .enchanted__dessert__lemon {
   background-color: white;
@@ -876,9 +999,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.enchanted__dessert__lemon:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .enchanted__dessert__lemon__description {
   display: flex;
@@ -890,6 +1012,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.enchanted__dessert__lemon__description__price:hover {
+  transform: translateX(-68%);
+}
+.enchanted__dessert__lemon__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 
 /*gourmand*/
@@ -935,9 +1064,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.gourmand__entree__tuna:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .gourmand__entree__tuna__description {
   display: flex;
@@ -949,6 +1077,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.gourmand__entree__tuna__description__price:hover {
+  transform: translateX(-68%);
+}
+.gourmand__entree__tuna__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .gourmand__entree__crunchy {
   background-color: white;
@@ -961,9 +1096,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.gourmand__entree__crunchy:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .gourmand__entree__crunchy__description {
   display: flex;
@@ -975,6 +1109,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.gourmand__entree__crunchy__description__price:hover {
+  transform: translateX(-68%);
+}
+.gourmand__entree__crunchy__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .gourmand__entree__mushroom {
   background-color: white;
@@ -987,9 +1128,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.gourmand__entree__mushroom:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .gourmand__entree__mushroom__description {
   display: flex;
@@ -1001,6 +1141,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.gourmand__entree__mushroom__description__price:hover {
+  transform: translateX(-68%);
+}
+.gourmand__entree__mushroom__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .gourmand__maindish {
   margin-left: 10px;
@@ -1018,9 +1165,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.gourmand__maindish__roast:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .gourmand__maindish__roast__description {
   display: flex;
@@ -1032,6 +1178,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.gourmand__maindish__roast__description__price:hover {
+  transform: translateX(-68%);
+}
+.gourmand__maindish__roast__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .gourmand__maindish__roasted {
   background-color: white;
@@ -1044,9 +1197,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.gourmand__maindish__roasted:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .gourmand__maindish__roasted__description {
   display: flex;
@@ -1058,6 +1210,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.gourmand__maindish__roasted__description__price:hover {
+  transform: translateX(-68%);
+}
+.gourmand__maindish__roasted__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .gourmand__maindish__angust {
   background-color: white;
@@ -1070,9 +1229,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.gourmand__maindish__angust:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .gourmand__maindish__angust__description {
   display: flex;
@@ -1084,6 +1242,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.gourmand__maindish__angust__description__price:hover {
+  transform: translateX(-68%);
+}
+.gourmand__maindish__angust__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .gourmand__dessert {
   background-color: #EEEEEE;
@@ -1100,9 +1265,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.gourmand__dessert__assorted:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .gourmand__dessert__assorted__description {
   display: flex;
@@ -1114,6 +1278,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.gourmand__dessert__assorted__description__price:hover {
+  transform: translateX(-68%);
+}
+.gourmand__dessert__assorted__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .gourmand__dessert__creme {
   background-color: white;
@@ -1126,9 +1297,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.gourmand__dessert__creme:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .gourmand__dessert__creme__description {
   display: flex;
@@ -1140,6 +1310,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.gourmand__dessert__creme__description__price:hover {
+  transform: translateX(-68%);
+}
+.gourmand__dessert__creme__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .gourmand__dessert__tiramisu {
   background-color: white;
@@ -1152,9 +1329,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.gourmand__dessert__tiramisu:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .gourmand__dessert__tiramisu__description {
   display: flex;
@@ -1166,6 +1342,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.gourmand__dessert__tiramisu__description__price:hover {
+  transform: translateX(-68%);
+}
+.gourmand__dessert__tiramisu__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 
 /*bastille*/
@@ -1211,9 +1394,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.bastille__entree__citrus:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .bastille__entree__citrus__description {
   display: flex;
@@ -1225,6 +1407,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.bastille__entree__citrus__description__price:hover {
+  transform: translateX(-68%);
+}
+.bastille__entree__citrus__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .bastille__entree__grandmother {
   background-color: white;
@@ -1237,9 +1426,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.bastille__entree__grandmother:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .bastille__entree__grandmother__description {
   display: flex;
@@ -1251,6 +1439,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.bastille__entree__grandmother__description__price:hover {
+  transform: translateX(-68%);
+}
+.bastille__entree__grandmother__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .bastille__entree__onion {
   background-color: white;
@@ -1263,9 +1458,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.bastille__entree__onion:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .bastille__entree__onion__description {
   display: flex;
@@ -1277,6 +1471,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.bastille__entree__onion__description__price:hover {
+  transform: translateX(-68%);
+}
+.bastille__entree__onion__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .bastille__maindish {
   margin-left: 10px;
@@ -1294,9 +1495,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.bastille__maindish__scallops:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .bastille__maindish__scallops__description {
   display: flex;
@@ -1308,6 +1508,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.bastille__maindish__scallops__description__price:hover {
+  transform: translateX(-68%);
+}
+.bastille__maindish__scallops__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .bastille__maindish__magret {
   background-color: white;
@@ -1320,9 +1527,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.bastille__maindish__magret:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .bastille__maindish__magret__description {
   display: flex;
@@ -1334,6 +1540,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.bastille__maindish__magret__description__price:hover {
+  transform: translateX(-68%);
+}
+.bastille__maindish__magret__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .bastille__maindish__game {
   background-color: white;
@@ -1346,9 +1559,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.bastille__maindish__game:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .bastille__maindish__game__description {
   display: flex;
@@ -1360,6 +1572,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.bastille__maindish__game__description__price:hover {
+  transform: translateX(-68%);
+}
+.bastille__maindish__game__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .bastille__dessert {
   background-color: #EEEEEE;
@@ -1376,9 +1595,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.bastille__dessert__floral:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .bastille__dessert__floral__description {
   display: flex;
@@ -1390,6 +1608,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.bastille__dessert__floral__description__price:hover {
+  transform: translateX(-68%);
+}
+.bastille__dessert__floral__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .bastille__dessert__lava {
   background-color: white;
@@ -1402,9 +1627,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.bastille__dessert__lava:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .bastille__dessert__lava__description {
   display: flex;
@@ -1416,6 +1640,13 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.bastille__dessert__lava__description__price:hover {
+  transform: translateX(-68%);
+}
+.bastille__dessert__lava__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 .bastille__dessert__napolean {
   background-color: white;
@@ -1428,9 +1659,8 @@ h4 {
   margin-bottom: 20px;
   box-shadow: 1px 1px 15px #EEEEEE;
   cursor: pointer;
-}
-.bastille__dessert__napolean:active + .box {
-  transform: translateX(-68%);
+  overflow: hidden;
+  opacity: 0;
 }
 .bastille__dessert__napolean__description {
   display: flex;
@@ -1442,10 +1672,16 @@ h4 {
   display: flex;
   flex-direction: row;
   margin-right: -40px;
+  transition: transform 1000ms ease-in-out;
+}
+.bastille__dessert__napolean__description__price:hover {
+  transform: translateX(-68%);
+}
+.bastille__dessert__napolean__description__price:hover .fa-check {
+  transform: rotate(-1turn);
 }
 
 .footer {
-  width: 375px;
   height: 190px;
   background-color: #212121;
   color: white;

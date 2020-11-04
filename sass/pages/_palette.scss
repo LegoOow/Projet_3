@@ -4,25 +4,24 @@
 .heart_palette {
     position: absolute;
     font-size: 20px;
-    top: 35px;
-    left: 250px;
+    top: 45px;
+    left: 320px;
     color: black;
 }
 
 .size_photo_palette {
-    background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-    width: 380px;
-    height: 250px; 
-    margin-left: -10px;
+    width: 400px;
+    height: 250px;
+    margin-left: -10px; 
+    background: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;   
 }
 
 .palette {
     position: relative;
     border: 2px solid $color-grey;
-    width: 375px;
-    border-radius: 10% 10% 0% 0%;
+    border-radius: 6% 6% 0% 0%;
     background-color: $color-grey;
-    margin-left: -9px;
+    margin-left: -15px;
     margin-top: -50px;
 
     &__titre {
@@ -31,10 +30,10 @@
     }
 
     &__entree {
-        margin-left: 15px;
-
+        margin-left: 20px;
         &__escargot {
             @include buttons_palette;
+            animation: fondu 1000ms 150ms forwards;
             
             &__description {
                 @include description_palette;
@@ -47,6 +46,8 @@
 
         &__duck {
             @include buttons_palette;
+            animation: fondu 1000ms 1000ms forwards;
+            
 
             &__description {
                 @include description_palette;
@@ -59,6 +60,7 @@
 
         &__fried {
             @include buttons_palette;
+            animation: fondu 1000ms 1500ms forwards;
 
             &__description {
                 @include description_palette;
@@ -71,14 +73,14 @@
     }
 
     &__maindish {
-        margin-left: -10px;
         background-color: #EEEEEE;
-        margin-top: -20px;
-        padding-left: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
 
         &__herb {
             @include buttons_palette;
-            
+            animation: fondu 1000ms 150ms forwards;
+
             &__description {
                 @include description_palette;
             }
@@ -90,6 +92,7 @@
 
         &__ox {
             @include buttons_palette;
+            animation: fondu 1000ms 1000ms forwards;
 
             &__description {
                 @include description_palette;
@@ -102,6 +105,7 @@
 
         &__filet {
             @include buttons_palette;
+            animation: fondu 1000ms 1500ms forwards;
 
             &__description {
                 @include description_palette;
@@ -116,9 +120,11 @@
     &__dessert {
         background-color: #EEEEEE;
         padding-bottom: 30px;
+        margin-left: 20px;
 
         &__paris {
             @include buttons_palette;
+            animation: fondu 1000ms 150ms forwards;
             
             &__description {
                 @include description_palette;
@@ -131,6 +137,7 @@
 
         &__macaroons {
             @include buttons_palette;
+            animation: fondu 1000ms 1000ms forwards;
 
             &__description {
                 @include description_palette;
@@ -143,6 +150,7 @@
 
         &__mousse {
             @include buttons_palette;
+            animation: fondu 1000ms 1500ms forwards;
 
             &__description {
                 @include description_palette;
