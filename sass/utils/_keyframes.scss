@@ -11,3 +11,10 @@
         opacity: 1;
     }
 }
+
+@keyframes heart{
+    100% {
+        font-weight: bold;
+        color: red;
+    }
+}

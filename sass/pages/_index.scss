@@ -10,7 +10,7 @@
 .fa-heart {
     color:black;
     &:active {
-        color: red;
+        animation: heart 1ms forwards;
     }
 }
 
@@ -18,7 +18,6 @@
     display: flex;
     flex-direction: row;
     background-color: #BDBDBD;
-    margin-left: -8px;
 }
 
 .fa-map-marker-alt {
@@ -28,7 +27,6 @@
 .book {
     text-align: center;
     background-color: #EEEEEE;
-    margin-left: -8px;
     padding-bottom: 40px;
     padding-top: 5px;
 

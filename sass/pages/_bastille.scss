@@ -1,113 +1,115 @@
-
 /*bastille*/
 
 .heart_bastille {
     position: absolute;
     font-size: 20px;
-    top: 35px;
-    left: 250px;
+    top: 45px;
+    left: 320px;
     color: black;
 }
 
 .size_photo_bastille {
-    background-image: url(images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-    width: 380px;
-    height: 260px; 
-    margin-left: -10px;
+    width: 100%;
+    height: 250px; 
+    background: url(images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat;   
 }
 
 .bastille {
     position: relative;
     border: 2px solid $color-grey;
-    width: 400px;
-    border-radius: 10% 10% 0% 0%;
+    border-radius: 6% 6% 0% 0%;
     background-color: $color-grey;
-    margin-left: -23px;
     margin-top: -50px;
 
     &__titre {
         margin-top: 30px;
-        margin-left: 25px;
+        margin-left: 15px;
     }
 
     &__entree {
-        margin-left: 30px;
-
+        margin-left: 20px;
         &__citrus {
             @include buttons_palette;
+            @include animation(150ms);
             
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(160px);
-                }
+            &__price {
+                @include price_palette(90px);
             }
         }
 
         &__grandmother {
             @include buttons_palette;
+            @include animation (1000ms);
+            
 
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(22px);
-                }
+            &__price {
+                @include price_palette(20px);
             }
         }
 
         &__onion {
             @include buttons_palette;
+            @include animation (1500ms);
 
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(205px);
-                }
+            &__price {
+                @include price_palette(175px);
             }
         }
     }
 
     &__maindish {
-        margin-left: 10px;
         background-color: #EEEEEE;
-        padding-left: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
 
         &__scallops {
             @include buttons_palette;
-            
+            @include animation(150ms);
+
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(127px);
-                }
+            &__price {
+                @include price_palette(130px);
             }
         }
 
         &__magret {
             @include buttons_palette;
+            @include animation(1000ms);
 
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(107px);
-                }
+            &__price {
+                @include price_palette(120px);
             }
         }
 
         &__game {
             @include buttons_palette;
+            @include animation(1500ms);
 
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(111px);
-                }
+            &__price {
+                @include price_palette(110px);
             }
         }
     }
@@ -115,40 +117,44 @@
     &__dessert {
         background-color: #EEEEEE;
         padding-bottom: 30px;
+        margin-left: 20px;
 
         &__floral {
             @include buttons_palette;
+            @include animation(150ms);
             
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(133px);
-                }
+            &__price {
+                @include price_palette(135px);
             }
         }
 
         &__lava {
             @include buttons_palette;
+            @include animation(1000ms);
 
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(206px);
-                }
+            &__price {
+                @include price_palette(105px);
             }
         }
 
         &__napolean {
             @include buttons_palette;
+            @include animation(1500ms);
 
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(75px);
-                }
+            &__price {
+                @include price_palette(68px);
             }
         }
     }

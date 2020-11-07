@@ -4,110 +4,113 @@
 .heart_gourmand {
     position: absolute;
     font-size: 20px;
-    top: 35px;
-    left: 250px;
+    top: 45px;
+    left: 320px;
     color: black;
 }
 
 .size_photo_gourmand {
-    background-image: url(images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-    width: 380px;
-    height: 260px; 
-    margin-left: -10px;
+    width: 100%;
+    height: 250px;
+    background: url(images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat;   
 }
 
 .gourmand {
     position: relative;
     border: 2px solid $color-grey;
-    width: 400px;
-    border-radius: 10% 10% 0% 0%;
+    border-radius: 6% 6% 0% 0%;
     background-color: $color-grey;
-    margin-left: -23px;
     margin-top: -50px;
 
     &__titre {
         margin-top: 30px;
-        margin-left: 25px;
+        margin-left: 15px;
     }
 
     &__entree {
-        margin-left: 30px;
-
+        margin-left: 20px;
         &__tuna {
             @include buttons_palette;
+            @include animation(150ms);
             
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(140px);
-                }
+            &__price {
+                @include price_palette(135px);
             }
         }
 
         &__crunchy {
             @include buttons_palette;
+            @include animation (1000ms);
+            
 
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(105px);
-                }
+            &__price {
+                @include price_palette(65px);
             }
         }
 
         &__mushroom {
             @include buttons_palette;
+            @include animation (1500ms);
 
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(185px);
-                }
+            &__price {
+                @include price_palette(142px);
             }
         }
     }
 
     &__maindish {
-        margin-left: 10px;
         background-color: #EEEEEE;
-        padding-left: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
 
         &__roast {
             @include buttons_palette;
-            
+            @include animation(150ms);
+
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(150px);
-                }
+            &__price {
+                @include price_palette(0px);
             }
         }
 
         &__roasted {
             @include buttons_palette;
+            @include animation(1000ms);
 
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(107px);
-                }
+            &__price {
+                @include price_palette(105px);
             }
         }
 
         &__angust {
             @include buttons_palette;
+            @include animation(1500ms);
 
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(118px);
-                }
+            &__price {
+                @include price_palette(115px);
             }
         }
     }
@@ -115,40 +118,44 @@
     &__dessert {
         background-color: #EEEEEE;
         padding-bottom: 30px;
+        margin-left: 20px;
 
         &__assorted {
             @include buttons_palette;
+            @include animation(150ms);
             
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(180px);
-                }
+            &__price {
+                @include price_palette(95px);
             }
         }
 
         &__creme {
             @include buttons_palette;
+            @include animation(1000ms);
 
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(206px);
-                }
+            &__price {
+                @include price_palette(160px);
             }
         }
 
         &__tiramisu {
             @include buttons_palette;
+            @include animation(1500ms);
 
             &__description {
                 @include description_palette;
+            }
 
-                &__price {
-                    @include price_palette(175px);
-                }
+            &__price {
+                @include price_palette(168px);
             }
         }
     }
