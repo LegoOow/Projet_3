@@ -32,33 +32,47 @@
         &__escargot {
             @include buttons_palette;
             @include animation(150ms);
+            &:hover {
+                .palette__entree__escargot__price {
+                    @include animationprice(0px);
+                }
+            }
             
             &__description {
                 @include description_palette;
             }
 
             &__price {
-                @include price_palette(80px);
+                @include price_palette(77px);
             }
         }
 
         &__duck {
             @include buttons_palette;
             @include animation (1000ms);
+            &:hover {
+                .palette__entree__duck__price {
+                    @include animationprice(0px);
+                }
+            }
             
-
             &__description {
                 @include description_palette;
             }
 
             &__price {
-                @include price_palette(95px);
+                @include price_palette(93px);
             }
         }
 
         &__fried {
             @include buttons_palette;
             @include animation (1500ms);
+            &:hover {
+                .palette__entree__fried__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
@@ -78,6 +92,33 @@
         &__herb {
             @include buttons_palette;
             @include animation(150ms);
+            &:hover {
+                .palette__maindish__herb__description {
+                    width: 180px;
+                }
+                .palette__maindish__herb__price {
+                    @include animationprice(40px);
+                }
+            }
+
+                &__description {
+                    @include description_palette;
+
+                }
+
+                &__price {
+                    @include price_palette(35px);
+                }
+        }
+
+        &__ox {
+            @include buttons_palette;
+            @include animation(1000ms);
+            &:hover {
+                .palette__maindish__ox__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
@@ -88,29 +129,21 @@
             }
         }
 
-        &__ox {
-            @include buttons_palette;
-            @include animation(1000ms);
-
-            &__description {
-                @include description_palette;
-            }
-
-            &__price {
-                @include price_palette(20px);
-            }
-        }
-
         &__filet {
             @include buttons_palette;
             @include animation(1500ms);
+            &:hover {
+                .palette__maindish__filet__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
             }
 
             &__price {
-                @include price_palette(138px);
+                @include price_palette(135px);
             }
         }
     }
@@ -123,39 +156,54 @@
         &__paris {
             @include buttons_palette;
             @include animation(150ms);
+            &:hover {
+                .palette__dessert__paris__price {
+                    @include animationprice(0px);
+                }
+            }
             
             &__description {
                 @include description_palette;
             }
 
             &__price {
-                @include price_palette(180px);
+                @include price_palette(177px);
             }
         }
 
         &__macaroons {
             @include buttons_palette;
             @include animation(1000ms);
+            &:hover {
+                .palette__dessert__macaroons__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
             }
 
             &__price {
-                @include price_palette(105px);
+                @include price_palette(102px);
             }
         }
 
         &__mousse {
             @include buttons_palette;
             @include animation(1500ms);
+            &:hover {
+                .palette__dessert__mousse__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
             }
 
             &__price {
-                @include price_palette(82px);
+                @include price_palette(80px);
             }
         }
     }

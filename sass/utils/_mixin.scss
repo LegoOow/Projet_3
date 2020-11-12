@@ -47,38 +47,24 @@
         border-radius: 10%;
 }
 
-.fa-check {
-        margin-left: 12px;
-        margin-top: 15px;
-        color:#91EED8;
-        background-color: white;
-        border-radius: 50%;
-        padding: 3px;
-        transform: rotate(0turn);
-        transition: transform 500ms ease-in-out;
-}
+
 
 
 @mixin description_palette {
         display: flex;
         flex-direction: column;
         font-size: 0.9em;
+        overflow: hidden;
+   
 }
 
 
-@mixin price_palette($margin-price) {
-        margin-left: $margin-price;
+@mixin price_palette($difference) {
         display: flex;
         flex-direction: row;
-        margin-right: -40px;
         transition: transform 1000ms ease-in-out;
-        &:hover {
-                transform: translateX(-68%);
-                .fa-check {
-                        transform: rotate(-1turn);
-                }                             
-        }
-
+        position: relative;
+        left: $difference;
 }
 
 @mixin menu_position {
@@ -89,4 +75,12 @@
 
 @mixin animation ($timing) {
         animation: fondu 1000ms $timing forwards;
+}
+
+@mixin animationprice($decalage) {
+        transform: translateX(-68%);
+        margin-left: $decalage;
+        .fa-check {
+            transform: rotate(-1turn);
+        }
 }

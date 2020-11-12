@@ -18,3 +18,14 @@
         color: red;
     }
 }
+
+.fa-check {
+    margin-left: 12px;
+    margin-top: 15px;
+    color:#91EED8;
+    background-color: white;
+    border-radius: 50%;
+    padding: 3px;
+    transform: rotate(0turn);
+    transition: transform 1000ms ease-in-out;
+}

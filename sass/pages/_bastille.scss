@@ -31,6 +31,11 @@
         &__citrus {
             @include buttons_palette;
             @include animation(150ms);
+            &:hover {
+                .bastille__entree__citrus__price {
+                    @include animationprice(0px);
+                }
+            }
             
             &__description {
                 @include description_palette;
@@ -44,20 +49,32 @@
         &__grandmother {
             @include buttons_palette;
             @include animation (1000ms);
+            &:hover {
+                .bastille__entree__grandmother__description {
+                    width: 180px;
+                }
+                .bastille__entree__grandmother__price {
+                    @include animationprice(40px);
+                }
+            }
             
-
             &__description {
                 @include description_palette;
             }
 
             &__price {
-                @include price_palette(20px);
+                @include price_palette(35px);
             }
         }
 
         &__onion {
             @include buttons_palette;
             @include animation (1500ms);
+            &:hover {
+                .bastille__entree__onion__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
@@ -77,6 +94,11 @@
         &__scallops {
             @include buttons_palette;
             @include animation(150ms);
+            &:hover {
+                .bastille__maindish__scallops__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
@@ -90,6 +112,11 @@
         &__magret {
             @include buttons_palette;
             @include animation(1000ms);
+            &:hover {
+                .bastille__maindish__magret__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
@@ -103,6 +130,11 @@
         &__game {
             @include buttons_palette;
             @include animation(1500ms);
+            &:hover {
+                .bastille__maindish__game__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
@@ -122,6 +154,11 @@
         &__floral {
             @include buttons_palette;
             @include animation(150ms);
+            &:hover {
+                .bastille__dessert__floral__price {
+                    @include animationprice(0px);
+                }
+            }
             
             &__description {
                 @include description_palette;
@@ -135,6 +172,11 @@
         &__lava {
             @include buttons_palette;
             @include animation(1000ms);
+            &:hover {
+                .bastille__dessert__lava__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
@@ -148,13 +190,18 @@
         &__napolean {
             @include buttons_palette;
             @include animation(1500ms);
+            &:hover {
+                .bastille__dessert__napolean__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
             }
 
             &__price {
-                @include price_palette(68px);
+                @include price_palette(69px);
             }
         }
     }

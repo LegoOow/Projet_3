@@ -33,6 +33,11 @@
         &__foie {
             @include buttons_palette;
             @include animation(150ms);
+            &:hover {
+                .enchanted__entree__foie__price {
+                    @include animationprice(0px);
+                }
+            }
             
             &__description {
                 @include description_palette;
@@ -46,6 +51,11 @@
         &__oscietra {
             @include buttons_palette;
             @include animation (1000ms);
+            &:hover {
+                .enchanted__entree__oscietra__price {
+                    @include animationprice(0px);
+                }
+            }
             
 
             &__description {
@@ -60,6 +70,11 @@
         &__lobster {
             @include buttons_palette;
             @include animation (1500ms);
+            &:hover {
+                .enchanted__entree__lobster__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
@@ -74,13 +89,18 @@
         &__duck {
             @include buttons_palette;
             @include animation (2000ms);
+            &:hover {
+                .enchanted__entree__duck__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
             }
 
             &__price {
-                @include price_palette(80px);
+                @include price_palette(62px);
             }
         }
     }
@@ -93,6 +113,11 @@
         &__fresh {
             @include buttons_palette;
             @include animation(150ms);
+            &:hover {
+                .enchanted__maindish__fresh__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
@@ -106,6 +131,11 @@
         &__pan {
             @include buttons_palette;
             @include animation(1000ms);
+            &:hover {
+                .enchanted__maindish__pan__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
@@ -119,6 +149,11 @@
         &__braised {
             @include buttons_palette;
             @include animation(1500ms);
+            &:hover {
+                .enchanted__maindish__braised__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
@@ -138,6 +173,11 @@
         &__hazelnut {
             @include buttons_palette;
             @include animation(150ms);
+            &:hover {
+                .enchanted__dessert__hazelnut__price {
+                    @include animationprice(0px);
+                }
+            }
             
             &__description {
                 @include description_palette;
@@ -151,19 +191,29 @@
         &__baba {
             @include buttons_palette;
             @include animation(1000ms);
+            &:hover {
+                .enchanted__dessert__baba__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
             }
 
             &__price {
-                @include price_palette(148px);
+                @include price_palette(150px);
             }
         }
 
         &__lemon {
             @include buttons_palette;
             @include animation(1500ms);
+            &:hover {
+                .enchanted__dessert__lemon__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;

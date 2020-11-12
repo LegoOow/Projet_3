@@ -1,11 +1,4 @@
 
-.bloc_principal {
-    display: flex;
-    flex-direction: column;
-    width: 375px;
-    margin: auto;
-}
-
 h1 {
     font-family: 'Sansita Swashed', cursive;
 }
@@ -42,7 +35,6 @@ h4 {
 }
 
 .text {
-    width: 225px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;

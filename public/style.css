@@ -18,15 +18,6 @@
     color: red;
   }
 }
-.box {
-  width: 50px;
-  position: relative;
-  left: 20px;
-  height: 100%;
-  background-color: #91EED8;
-  border-radius: 10%;
-}
-
 .fa-check {
   margin-left: 12px;
   margin-top: 15px;
@@ -35,14 +26,16 @@
   border-radius: 50%;
   padding: 3px;
   transform: rotate(0turn);
-  transition: transform 500ms ease-in-out;
+  transition: transform 1000ms ease-in-out;
 }
 
-.bloc_principal {
-  display: flex;
-  flex-direction: column;
-  width: 375px;
-  margin: auto;
+.box {
+  width: 50px;
+  position: relative;
+  left: 20px;
+  height: 100%;
+  background-color: #91EED8;
+  border-radius: 10%;
 }
 
 h1 {
@@ -81,7 +74,6 @@ h4 {
 }
 
 .text {
-  width: 225px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -102,6 +94,7 @@ h4 {
 
 .fa-heart {
   color: black;
+  cursor: pointer;
 }
 .fa-heart:active {
   animation: heart 1ms forwards;
@@ -140,7 +133,7 @@ h4 {
 
 .how {
   padding-bottom: 25px;
-  padding-left: 4px;
+  margin-left: 10px;
 }
 .how__chose {
   display: flex;
@@ -214,7 +207,6 @@ h4 {
 
 .restaurants {
   background-color: #EEEEEE;
-  margin-left: -8px;
   padding-top: 10px;
   padding-left: 12px;
   padding-bottom: 10px;
@@ -374,23 +366,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 150ms forwards;
 }
+.palette__entree__escargot:hover .palette__entree__escargot__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.palette__entree__escargot:hover .palette__entree__escargot__price .fa-check {
+  transform: rotate(-1turn);
+}
 .palette__entree__escargot__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .palette__entree__escargot__price {
-  margin-left: 80px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.palette__entree__escargot__price:hover {
-  transform: translateX(-68%);
-}
-.palette__entree__escargot__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 77px;
 }
 .palette__entree__duck {
   background-color: white;
@@ -407,23 +401,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1000ms forwards;
 }
+.palette__entree__duck:hover .palette__entree__duck__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.palette__entree__duck:hover .palette__entree__duck__price .fa-check {
+  transform: rotate(-1turn);
+}
 .palette__entree__duck__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .palette__entree__duck__price {
-  margin-left: 95px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.palette__entree__duck__price:hover {
-  transform: translateX(-68%);
-}
-.palette__entree__duck__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 93px;
 }
 .palette__entree__fried {
   background-color: white;
@@ -440,23 +436,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1500ms forwards;
 }
+.palette__entree__fried:hover .palette__entree__fried__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.palette__entree__fried:hover .palette__entree__fried__price .fa-check {
+  transform: rotate(-1turn);
+}
 .palette__entree__fried__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .palette__entree__fried__price {
-  margin-left: 190px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.palette__entree__fried__price:hover {
-  transform: translateX(-68%);
-}
-.palette__entree__fried__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 190px;
 }
 .palette__maindish {
   background-color: #EEEEEE;
@@ -478,23 +476,28 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 150ms forwards;
 }
+.palette__maindish__herb:hover .palette__maindish__herb__description {
+  width: 180px;
+}
+.palette__maindish__herb:hover .palette__maindish__herb__price {
+  transform: translateX(-68%);
+  margin-left: 40px;
+}
+.palette__maindish__herb:hover .palette__maindish__herb__price .fa-check {
+  transform: rotate(-1turn);
+}
 .palette__maindish__herb__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .palette__maindish__herb__price {
-  margin-left: 35px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.palette__maindish__herb__price:hover {
-  transform: translateX(-68%);
-}
-.palette__maindish__herb__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 35px;
 }
 .palette__maindish__ox {
   background-color: white;
@@ -511,23 +514,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1000ms forwards;
 }
+.palette__maindish__ox:hover .palette__maindish__ox__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.palette__maindish__ox:hover .palette__maindish__ox__price .fa-check {
+  transform: rotate(-1turn);
+}
 .palette__maindish__ox__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .palette__maindish__ox__price {
-  margin-left: 20px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.palette__maindish__ox__price:hover {
-  transform: translateX(-68%);
-}
-.palette__maindish__ox__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 35px;
 }
 .palette__maindish__filet {
   background-color: white;
@@ -544,23 +549,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1500ms forwards;
 }
+.palette__maindish__filet:hover .palette__maindish__filet__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.palette__maindish__filet:hover .palette__maindish__filet__price .fa-check {
+  transform: rotate(-1turn);
+}
 .palette__maindish__filet__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .palette__maindish__filet__price {
-  margin-left: 138px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.palette__maindish__filet__price:hover {
-  transform: translateX(-68%);
-}
-.palette__maindish__filet__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 135px;
 }
 .palette__dessert {
   background-color: #EEEEEE;
@@ -582,23 +589,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 150ms forwards;
 }
+.palette__dessert__paris:hover .palette__dessert__paris__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.palette__dessert__paris:hover .palette__dessert__paris__price .fa-check {
+  transform: rotate(-1turn);
+}
 .palette__dessert__paris__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .palette__dessert__paris__price {
-  margin-left: 180px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.palette__dessert__paris__price:hover {
-  transform: translateX(-68%);
-}
-.palette__dessert__paris__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 177px;
 }
 .palette__dessert__macaroons {
   background-color: white;
@@ -615,23 +624,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1000ms forwards;
 }
+.palette__dessert__macaroons:hover .palette__dessert__macaroons__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.palette__dessert__macaroons:hover .palette__dessert__macaroons__price .fa-check {
+  transform: rotate(-1turn);
+}
 .palette__dessert__macaroons__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .palette__dessert__macaroons__price {
-  margin-left: 105px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.palette__dessert__macaroons__price:hover {
-  transform: translateX(-68%);
-}
-.palette__dessert__macaroons__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 102px;
 }
 .palette__dessert__mousse {
   background-color: white;
@@ -648,23 +659,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1500ms forwards;
 }
+.palette__dessert__mousse:hover .palette__dessert__mousse__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.palette__dessert__mousse:hover .palette__dessert__mousse__price .fa-check {
+  transform: rotate(-1turn);
+}
 .palette__dessert__mousse__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .palette__dessert__mousse__price {
-  margin-left: 82px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.palette__dessert__mousse__price:hover {
-  transform: translateX(-68%);
-}
-.palette__dessert__mousse__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 80px;
 }
 
 /*enchanted*/
@@ -712,23 +725,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 150ms forwards;
 }
+.enchanted__entree__foie:hover .enchanted__entree__foie__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.enchanted__entree__foie:hover .enchanted__entree__foie__price .fa-check {
+  transform: rotate(-1turn);
+}
 .enchanted__entree__foie__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .enchanted__entree__foie__price {
-  margin-left: 135px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.enchanted__entree__foie__price:hover {
-  transform: translateX(-68%);
-}
-.enchanted__entree__foie__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 135px;
 }
 .enchanted__entree__oscietra {
   background-color: white;
@@ -745,23 +760,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1000ms forwards;
 }
+.enchanted__entree__oscietra:hover .enchanted__entree__oscietra__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.enchanted__entree__oscietra:hover .enchanted__entree__oscietra__price .fa-check {
+  transform: rotate(-1turn);
+}
 .enchanted__entree__oscietra__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .enchanted__entree__oscietra__price {
-  margin-left: 125px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.enchanted__entree__oscietra__price:hover {
-  transform: translateX(-68%);
-}
-.enchanted__entree__oscietra__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 125px;
 }
 .enchanted__entree__lobster {
   background-color: white;
@@ -778,23 +795,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1500ms forwards;
 }
+.enchanted__entree__lobster:hover .enchanted__entree__lobster__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.enchanted__entree__lobster:hover .enchanted__entree__lobster__price .fa-check {
+  transform: rotate(-1turn);
+}
 .enchanted__entree__lobster__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .enchanted__entree__lobster__price {
-  margin-left: 90px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.enchanted__entree__lobster__price:hover {
-  transform: translateX(-68%);
-}
-.enchanted__entree__lobster__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 90px;
 }
 .enchanted__entree__duck {
   background-color: white;
@@ -811,23 +830,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 2000ms forwards;
 }
+.enchanted__entree__duck:hover .enchanted__entree__duck__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.enchanted__entree__duck:hover .enchanted__entree__duck__price .fa-check {
+  transform: rotate(-1turn);
+}
 .enchanted__entree__duck__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .enchanted__entree__duck__price {
-  margin-left: 80px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.enchanted__entree__duck__price:hover {
-  transform: translateX(-68%);
-}
-.enchanted__entree__duck__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 62px;
 }
 .enchanted__maindish {
   background-color: #EEEEEE;
@@ -849,23 +870,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 150ms forwards;
 }
+.enchanted__maindish__fresh:hover .enchanted__maindish__fresh__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.enchanted__maindish__fresh:hover .enchanted__maindish__fresh__price .fa-check {
+  transform: rotate(-1turn);
+}
 .enchanted__maindish__fresh__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .enchanted__maindish__fresh__price {
-  margin-left: 90px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.enchanted__maindish__fresh__price:hover {
-  transform: translateX(-68%);
-}
-.enchanted__maindish__fresh__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 90px;
 }
 .enchanted__maindish__pan {
   background-color: white;
@@ -882,23 +905,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1000ms forwards;
 }
+.enchanted__maindish__pan:hover .enchanted__maindish__pan__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.enchanted__maindish__pan:hover .enchanted__maindish__pan__price .fa-check {
+  transform: rotate(-1turn);
+}
 .enchanted__maindish__pan__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .enchanted__maindish__pan__price {
-  margin-left: 80px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.enchanted__maindish__pan__price:hover {
-  transform: translateX(-68%);
-}
-.enchanted__maindish__pan__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 80px;
 }
 .enchanted__maindish__braised {
   background-color: white;
@@ -915,23 +940,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1500ms forwards;
 }
+.enchanted__maindish__braised:hover .enchanted__maindish__braised__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.enchanted__maindish__braised:hover .enchanted__maindish__braised__price .fa-check {
+  transform: rotate(-1turn);
+}
 .enchanted__maindish__braised__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .enchanted__maindish__braised__price {
-  margin-left: 80px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.enchanted__maindish__braised__price:hover {
-  transform: translateX(-68%);
-}
-.enchanted__maindish__braised__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 80px;
 }
 .enchanted__dessert {
   background-color: #EEEEEE;
@@ -953,23 +980,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 150ms forwards;
 }
+.enchanted__dessert__hazelnut:hover .enchanted__dessert__hazelnut__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.enchanted__dessert__hazelnut:hover .enchanted__dessert__hazelnut__price .fa-check {
+  transform: rotate(-1turn);
+}
 .enchanted__dessert__hazelnut__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .enchanted__dessert__hazelnut__price {
-  margin-left: 40px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.enchanted__dessert__hazelnut__price:hover {
-  transform: translateX(-68%);
-}
-.enchanted__dessert__hazelnut__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 40px;
 }
 .enchanted__dessert__baba {
   background-color: white;
@@ -986,23 +1015,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1000ms forwards;
 }
+.enchanted__dessert__baba:hover .enchanted__dessert__baba__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.enchanted__dessert__baba:hover .enchanted__dessert__baba__price .fa-check {
+  transform: rotate(-1turn);
+}
 .enchanted__dessert__baba__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .enchanted__dessert__baba__price {
-  margin-left: 148px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.enchanted__dessert__baba__price:hover {
-  transform: translateX(-68%);
-}
-.enchanted__dessert__baba__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 150px;
 }
 .enchanted__dessert__lemon {
   background-color: white;
@@ -1019,23 +1050,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1500ms forwards;
 }
+.enchanted__dessert__lemon:hover .enchanted__dessert__lemon__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.enchanted__dessert__lemon:hover .enchanted__dessert__lemon__price .fa-check {
+  transform: rotate(-1turn);
+}
 .enchanted__dessert__lemon__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .enchanted__dessert__lemon__price {
-  margin-left: 110px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.enchanted__dessert__lemon__price:hover {
-  transform: translateX(-68%);
-}
-.enchanted__dessert__lemon__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 110px;
 }
 
 /*gourmand*/
@@ -1082,23 +1115,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 150ms forwards;
 }
+.gourmand__entree__tuna:hover .gourmand__entree__tuna__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.gourmand__entree__tuna:hover .gourmand__entree__tuna__price .fa-check {
+  transform: rotate(-1turn);
+}
 .gourmand__entree__tuna__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .gourmand__entree__tuna__price {
-  margin-left: 135px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.gourmand__entree__tuna__price:hover {
-  transform: translateX(-68%);
-}
-.gourmand__entree__tuna__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 135px;
 }
 .gourmand__entree__crunchy {
   background-color: white;
@@ -1115,23 +1150,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1000ms forwards;
 }
+.gourmand__entree__crunchy:hover .gourmand__entree__crunchy__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.gourmand__entree__crunchy:hover .gourmand__entree__crunchy__price .fa-check {
+  transform: rotate(-1turn);
+}
 .gourmand__entree__crunchy__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .gourmand__entree__crunchy__price {
-  margin-left: 65px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.gourmand__entree__crunchy__price:hover {
-  transform: translateX(-68%);
-}
-.gourmand__entree__crunchy__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 65px;
 }
 .gourmand__entree__mushroom {
   background-color: white;
@@ -1148,23 +1185,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1500ms forwards;
 }
+.gourmand__entree__mushroom:hover .gourmand__entree__mushroom__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.gourmand__entree__mushroom:hover .gourmand__entree__mushroom__price .fa-check {
+  transform: rotate(-1turn);
+}
 .gourmand__entree__mushroom__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .gourmand__entree__mushroom__price {
-  margin-left: 142px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.gourmand__entree__mushroom__price:hover {
-  transform: translateX(-68%);
-}
-.gourmand__entree__mushroom__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 140px;
 }
 .gourmand__maindish {
   background-color: #EEEEEE;
@@ -1186,23 +1225,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 150ms forwards;
 }
+.gourmand__maindish__roast:hover .gourmand__maindish__roast__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.gourmand__maindish__roast:hover .gourmand__maindish__roast__price .fa-check {
+  transform: rotate(-1turn);
+}
 .gourmand__maindish__roast__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .gourmand__maindish__roast__price {
-  margin-left: 0px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.gourmand__maindish__roast__price:hover {
-  transform: translateX(-68%);
-}
-.gourmand__maindish__roast__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 38px;
 }
 .gourmand__maindish__roasted {
   background-color: white;
@@ -1219,23 +1260,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1000ms forwards;
 }
+.gourmand__maindish__roasted:hover .gourmand__maindish__roasted__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.gourmand__maindish__roasted:hover .gourmand__maindish__roasted__price .fa-check {
+  transform: rotate(-1turn);
+}
 .gourmand__maindish__roasted__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .gourmand__maindish__roasted__price {
-  margin-left: 105px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.gourmand__maindish__roasted__price:hover {
-  transform: translateX(-68%);
-}
-.gourmand__maindish__roasted__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 102px;
 }
 .gourmand__maindish__angust {
   background-color: white;
@@ -1252,23 +1295,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1500ms forwards;
 }
+.gourmand__maindish__angust:hover .gourmand__maindish__angust__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.gourmand__maindish__angust:hover .gourmand__maindish__angust__price .fa-check {
+  transform: rotate(-1turn);
+}
 .gourmand__maindish__angust__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .gourmand__maindish__angust__price {
-  margin-left: 115px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.gourmand__maindish__angust__price:hover {
-  transform: translateX(-68%);
-}
-.gourmand__maindish__angust__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 113px;
 }
 .gourmand__dessert {
   background-color: #EEEEEE;
@@ -1290,23 +1335,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 150ms forwards;
 }
+.gourmand__dessert__assorted:hover .gourmand__dessert__assorted__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.gourmand__dessert__assorted:hover .gourmand__dessert__assorted__price .fa-check {
+  transform: rotate(-1turn);
+}
 .gourmand__dessert__assorted__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .gourmand__dessert__assorted__price {
-  margin-left: 95px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.gourmand__dessert__assorted__price:hover {
-  transform: translateX(-68%);
-}
-.gourmand__dessert__assorted__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 98px;
 }
 .gourmand__dessert__creme {
   background-color: white;
@@ -1323,23 +1370,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1000ms forwards;
 }
+.gourmand__dessert__creme:hover .gourmand__dessert__creme__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.gourmand__dessert__creme:hover .gourmand__dessert__creme__price .fa-check {
+  transform: rotate(-1turn);
+}
 .gourmand__dessert__creme__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .gourmand__dessert__creme__price {
-  margin-left: 160px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.gourmand__dessert__creme__price:hover {
-  transform: translateX(-68%);
-}
-.gourmand__dessert__creme__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 160px;
 }
 .gourmand__dessert__tiramisu {
   background-color: white;
@@ -1356,23 +1405,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1500ms forwards;
 }
+.gourmand__dessert__tiramisu:hover .gourmand__dessert__tiramisu__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.gourmand__dessert__tiramisu:hover .gourmand__dessert__tiramisu__price .fa-check {
+  transform: rotate(-1turn);
+}
 .gourmand__dessert__tiramisu__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .gourmand__dessert__tiramisu__price {
-  margin-left: 168px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.gourmand__dessert__tiramisu__price:hover {
-  transform: translateX(-68%);
-}
-.gourmand__dessert__tiramisu__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 168px;
 }
 
 /*bastille*/
@@ -1419,23 +1470,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 150ms forwards;
 }
+.bastille__entree__citrus:hover .bastille__entree__citrus__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.bastille__entree__citrus:hover .bastille__entree__citrus__price .fa-check {
+  transform: rotate(-1turn);
+}
 .bastille__entree__citrus__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .bastille__entree__citrus__price {
-  margin-left: 90px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.bastille__entree__citrus__price:hover {
-  transform: translateX(-68%);
-}
-.bastille__entree__citrus__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 90px;
 }
 .bastille__entree__grandmother {
   background-color: white;
@@ -1452,23 +1505,28 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1000ms forwards;
 }
+.bastille__entree__grandmother:hover .bastille__entree__grandmother__description {
+  width: 180px;
+}
+.bastille__entree__grandmother:hover .bastille__entree__grandmother__price {
+  transform: translateX(-68%);
+  margin-left: 40px;
+}
+.bastille__entree__grandmother:hover .bastille__entree__grandmother__price .fa-check {
+  transform: rotate(-1turn);
+}
 .bastille__entree__grandmother__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .bastille__entree__grandmother__price {
-  margin-left: 20px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.bastille__entree__grandmother__price:hover {
-  transform: translateX(-68%);
-}
-.bastille__entree__grandmother__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 35px;
 }
 .bastille__entree__onion {
   background-color: white;
@@ -1485,23 +1543,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1500ms forwards;
 }
+.bastille__entree__onion:hover .bastille__entree__onion__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.bastille__entree__onion:hover .bastille__entree__onion__price .fa-check {
+  transform: rotate(-1turn);
+}
 .bastille__entree__onion__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .bastille__entree__onion__price {
-  margin-left: 175px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.bastille__entree__onion__price:hover {
-  transform: translateX(-68%);
-}
-.bastille__entree__onion__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 175px;
 }
 .bastille__maindish {
   background-color: #EEEEEE;
@@ -1523,23 +1583,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 150ms forwards;
 }
+.bastille__maindish__scallops:hover .bastille__maindish__scallops__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.bastille__maindish__scallops:hover .bastille__maindish__scallops__price .fa-check {
+  transform: rotate(-1turn);
+}
 .bastille__maindish__scallops__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .bastille__maindish__scallops__price {
-  margin-left: 130px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.bastille__maindish__scallops__price:hover {
-  transform: translateX(-68%);
-}
-.bastille__maindish__scallops__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 130px;
 }
 .bastille__maindish__magret {
   background-color: white;
@@ -1556,23 +1618,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1000ms forwards;
 }
+.bastille__maindish__magret:hover .bastille__maindish__magret__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.bastille__maindish__magret:hover .bastille__maindish__magret__price .fa-check {
+  transform: rotate(-1turn);
+}
 .bastille__maindish__magret__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .bastille__maindish__magret__price {
-  margin-left: 120px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.bastille__maindish__magret__price:hover {
-  transform: translateX(-68%);
-}
-.bastille__maindish__magret__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 120px;
 }
 .bastille__maindish__game {
   background-color: white;
@@ -1589,23 +1653,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1500ms forwards;
 }
+.bastille__maindish__game:hover .bastille__maindish__game__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.bastille__maindish__game:hover .bastille__maindish__game__price .fa-check {
+  transform: rotate(-1turn);
+}
 .bastille__maindish__game__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .bastille__maindish__game__price {
-  margin-left: 110px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.bastille__maindish__game__price:hover {
-  transform: translateX(-68%);
-}
-.bastille__maindish__game__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 110px;
 }
 .bastille__dessert {
   background-color: #EEEEEE;
@@ -1627,23 +1693,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 150ms forwards;
 }
+.bastille__dessert__floral:hover .bastille__dessert__floral__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.bastille__dessert__floral:hover .bastille__dessert__floral__price .fa-check {
+  transform: rotate(-1turn);
+}
 .bastille__dessert__floral__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .bastille__dessert__floral__price {
-  margin-left: 135px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.bastille__dessert__floral__price:hover {
-  transform: translateX(-68%);
-}
-.bastille__dessert__floral__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 135px;
 }
 .bastille__dessert__lava {
   background-color: white;
@@ -1660,23 +1728,25 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1000ms forwards;
 }
+.bastille__dessert__lava:hover .bastille__dessert__lava__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.bastille__dessert__lava:hover .bastille__dessert__lava__price .fa-check {
+  transform: rotate(-1turn);
+}
 .bastille__dessert__lava__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .bastille__dessert__lava__price {
-  margin-left: 105px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.bastille__dessert__lava__price:hover {
-  transform: translateX(-68%);
-}
-.bastille__dessert__lava__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 105px;
 }
 .bastille__dessert__napolean {
   background-color: white;
@@ -1693,30 +1763,31 @@ h4 {
   opacity: 0;
   animation: fondu 1000ms 1500ms forwards;
 }
+.bastille__dessert__napolean:hover .bastille__dessert__napolean__price {
+  transform: translateX(-68%);
+  margin-left: 0px;
+}
+.bastille__dessert__napolean:hover .bastille__dessert__napolean__price .fa-check {
+  transform: rotate(-1turn);
+}
 .bastille__dessert__napolean__description {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
+  overflow: hidden;
 }
 .bastille__dessert__napolean__price {
-  margin-left: 68px;
   display: flex;
   flex-direction: row;
-  margin-right: -40px;
   transition: transform 1000ms ease-in-out;
-}
-.bastille__dessert__napolean__price:hover {
-  transform: translateX(-68%);
-}
-.bastille__dessert__napolean__price:hover .fa-check {
-  transform: rotate(-1turn);
+  position: relative;
+  left: 69px;
 }
 
 .footer {
   height: 190px;
   background-color: #212121;
   color: white;
-  margin-left: -8px;
   font-weight: bold;
   font-size: 0.8em;
 }
@@ -1746,23 +1817,21 @@ h4 {
 }
 
 @media screen and (max-height: 480px) {
-  .palette__entree {
-    width: 360px;
-  }
-  .palette__maindish {
-    width: 360px;
+  .size_photo_bastille, .size_photo_palette, .size_photo_gourmand, .size_photo_enchanted {
+    display: none;
   }
 
-  .size_photo_palette {
-    background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-    width: 378px;
-    height: 250px;
-    margin-left: -9px;
+  /*index*/
+  body {
+    width: 667px;
   }
 
-  .button {
-    width: 365px;
-    margin-left: 1px;
+  .how__chose, .how__go, .how__create {
+    margin-left: 170px;
+  }
+
+  .restaurants__palette, .restaurants__bastille, .restaurants__enchanted, .restaurants__gourmand {
+    margin-left: 170px;
   }
 }
 

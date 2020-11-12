@@ -1,23 +1,25 @@
 @media screen and (max-height: 480px) {
-        .palette {
 
-            &__entree {
-            width: 360px;
-            }
-            &__maindish {
-                width: 360px;
-            }
-        }
+    .size_photo_bastille, .size_photo_palette, .size_photo_gourmand, .size_photo_enchanted {
+        display: none;
+    }
 
-        .size_photo_palette {
-            background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-            width: 378px;
-            height: 250px; 
-            margin-left: -9px;
-        }
 
-        .button {
-            width: 365px;
-            margin-left: 1px;
+/*index*/
+
+    body {
+        width: 667px;
+    }
+
+    .how {
+        &__chose, &__go, &__create  {
+            margin-left: 170px;
         }
     }
+
+    .restaurants {
+        &__palette, &__bastille, &__enchanted, &__gourmand {
+            margin-left: 170px;
+        }
+    }
+}

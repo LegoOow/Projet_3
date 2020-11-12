@@ -32,6 +32,11 @@
         &__tuna {
             @include buttons_palette;
             @include animation(150ms);
+            &:hover {
+                .gourmand__entree__tuna__price {
+                    @include animationprice(0px);
+                }
+            }
             
             &__description {
                 @include description_palette;
@@ -45,7 +50,11 @@
         &__crunchy {
             @include buttons_palette;
             @include animation (1000ms);
-            
+            &:hover {
+                .gourmand__entree__crunchy__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
@@ -59,13 +68,18 @@
         &__mushroom {
             @include buttons_palette;
             @include animation (1500ms);
+            &:hover {
+                .gourmand__entree__mushroom__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
             }
 
             &__price {
-                @include price_palette(142px);
+                @include price_palette(140px);
             }
         }
     }
@@ -78,39 +92,54 @@
         &__roast {
             @include buttons_palette;
             @include animation(150ms);
+            &:hover {
+                .gourmand__maindish__roast__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
             }
 
             &__price {
-                @include price_palette(0px);
+                @include price_palette(38px);
             }
         }
 
         &__roasted {
             @include buttons_palette;
             @include animation(1000ms);
+            &:hover {
+                .gourmand__maindish__roasted__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
             }
 
             &__price {
-                @include price_palette(105px);
+                @include price_palette(102px);
             }
         }
 
         &__angust {
             @include buttons_palette;
             @include animation(1500ms);
+            &:hover {
+                .gourmand__maindish__angust__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
             }
 
             &__price {
-                @include price_palette(115px);
+                @include price_palette(113px);
             }
         }
     }
@@ -123,19 +152,29 @@
         &__assorted {
             @include buttons_palette;
             @include animation(150ms);
+            &:hover {
+                .gourmand__dessert__assorted__price {
+                    @include animationprice(0px);
+                }
+            }
             
             &__description {
                 @include description_palette;
             }
 
             &__price {
-                @include price_palette(95px);
+                @include price_palette(98px);
             }
         }
 
         &__creme {
             @include buttons_palette;
             @include animation(1000ms);
+            &:hover {
+                .gourmand__dessert__creme__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
@@ -149,6 +188,11 @@
         &__tiramisu {
             @include buttons_palette;
             @include animation(1500ms);
+            &:hover {
+                .gourmand__dessert__tiramisu__price {
+                    @include animationprice(0px);
+                }
+            }
 
             &__description {
                 @include description_palette;
