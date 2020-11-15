@@ -86,17 +86,20 @@ h4 {
 
 .header__logo {
   width: 130px;
-  margin: 10px 0px -5px 105px;
 }
 
-.header__logo__index {
-  width: 130px;
-  margin: 10px 0px 0px 120px;
+.titre_principal {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
-.fa-arrow-left {
-  margin: 10px 10px 15px 10px;
+.fleche {
   color: black;
+  position: relative;
+  right: 110px;
 }
 
 /*Main*/
