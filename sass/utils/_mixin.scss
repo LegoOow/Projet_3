@@ -8,7 +8,11 @@
         border-radius: 10px;
         margin-left: 5px;
         margin-bottom: 20px;
-        box-shadow: 1px 1px 15px #EEEEEE;  
+        box-shadow: 1px 1px 15px #EEEEEE;
+        cursor: pointer;
+        &:hover {
+                box-shadow: 1px 1px 15px #dbcccc;
+        }
 }
 
 @mixin buttons_how_number {
@@ -21,6 +25,10 @@
         font-size: 0.9em;
         padding-left: 5px;
         padding-right: 5px;
+        cursor: pointer;
+        &:hover {
+                box-shadow: 1px 1px 15px #dbcccc;
+        }
 }
 
 @mixin buttons_palette {

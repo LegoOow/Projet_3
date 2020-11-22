@@ -18,6 +18,10 @@
             color: white;
             background-color: #b250c4;
             box-shadow: 1px 1px 15px #BDBDBD;
+            &:hover {
+                box-shadow: 1px 1px 15px #9356DC;
+                background-color: #b95ec9;
+            }
         }
     }
 }

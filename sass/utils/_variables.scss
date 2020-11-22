@@ -4,3 +4,39 @@ $color-grey: #EEEEEE;
 $footer-margin: 15px;
 $footer-margin-top: -15px;
 
+.margin-logo {
+    margin-top: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.size_photo {
+    width: 325px;
+    height: 175px;
+    border-radius: 5% 5% 0% 0%;
+}
+
+.margin0 {
+    margin: 0;
+}
+
+.text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.souligne {
+    border-bottom: 2px solid #91EED8;
+    width: 10px;
+}
+
+.contact {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.margeh2 {
+    margin-right: 180px;
+}

@@ -1,25 +1,36 @@
-@media screen and (max-height: 480px) {
+@media screen and (max-height: 480px) { /* Téléphone horizontal*/
 
     .size_photo_bastille, .size_photo_palette, .size_photo_gourmand, .size_photo_enchanted {
         display: none;
     }
 
-
-/*index*/
-
-    body {
-        width: 667px;
-    }
-
-    .how {
-        &__chose, &__go, &__create  {
-            margin-left: 170px;
+    .footer {
+        
+        &__logo {
+            padding-right: 250px;
+        }
+    
+        &__suggest {
+            padding-right: 200px;
+        }
+    
+        &__partner {
+            padding-right: 210px;
+        }
+    
+        &__legal {
+            padding-right: 310px;
+        }
+    
+        &__contact {
+            padding-right: 295px;
         }
     }
+}
 
-    .restaurants {
-        &__palette, &__bastille, &__enchanted, &__gourmand {
-            margin-left: 170px;
-        }
+@media screen and (max-width: 480px) { /* Téléphone vertical*/
+ 
+    .footer {
+        align-items: flex-start;
     }
 }
