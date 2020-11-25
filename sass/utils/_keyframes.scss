@@ -54,3 +54,13 @@
     transform: rotate(0turn);
     transition: transform 1000ms ease-in-out;
 }
+
+@keyframes pageblanche {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
