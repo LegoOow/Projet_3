@@ -128,7 +128,7 @@ h4 {
 .titre_principal {
   display: flex;
   flex-direction: row;
-  height: 30px;
+  height: 40px;
   align-items: center;
   justify-content: center;
 }
@@ -160,7 +160,7 @@ h4 {
 }
 
 .pageblanche {
-  animation: pageblanche 3s linear forwards;
+  animation: pageblanche 2s linear forwards;
   z-index: 2;
 }
 
