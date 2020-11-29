@@ -156,12 +156,6 @@ h4 {
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 4;
-}
-
-.pageblanche {
-  animation: pageblanche 2s linear forwards;
-  z-index: 2;
 }
 
 .heart_shape {
