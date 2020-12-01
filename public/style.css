@@ -87,10 +87,10 @@
 
 @keyframes pageblanche {
   0% {
-    transform: translateX(100%);
+    transform: scale(1);
   }
   100% {
-    transform: translateX(0%);
+    transform: scale(0);
   }
 }
 .box {
@@ -140,6 +140,19 @@ h4 {
 }
 
 /*Main*/
+.pageblanche {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  animation: pageblanche 3s cubic-bezier(1, 0.06, 1, -0.24) forwards;
+  z-index: 4;
+}
+
 .loading {
   border: 10px solid #f3f3f3;
   border-top: 10px solid #9356DC;
@@ -156,6 +169,11 @@ h4 {
   bottom: 0;
   right: 0;
   left: 0;
+  z-index: 6;
+}
+
+.position {
+  z-index: 2;
 }
 
 .heart_shape {
