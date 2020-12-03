@@ -464,10 +464,10 @@ h4 {
 
 /*Palette*/
 .heart_palette {
-  position: absolute;
+  position: relative;
   font-size: 20px;
-  top: 45px;
-  left: 320px;
+  top: 25px;
+  left: 130px;
   color: black;
 }
 
@@ -478,6 +478,9 @@ h4 {
 }
 
 .palette {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   border: 2px solid #EEEEEE;
   border-radius: 6% 6% 0% 0%;
@@ -485,11 +488,10 @@ h4 {
   margin-top: -50px;
 }
 .palette__titre {
+  display: flex;
+  flex-direction: row;
   margin-top: 30px;
-  margin-left: 15px;
-}
-.palette__entree {
-  margin-left: 20px;
+  margin-left: -125px;
 }
 .palette__entree__escargot {
   background-color: white;
@@ -595,7 +597,6 @@ h4 {
 }
 .palette__maindish {
   background-color: #EEEEEE;
-  margin-left: 20px;
   margin-top: 20px;
 }
 .palette__maindish__herb {
@@ -706,7 +707,6 @@ h4 {
 .palette__dessert {
   background-color: #EEEEEE;
   padding-bottom: 30px;
-  margin-left: 20px;
 }
 .palette__dessert__paris {
   background-color: white;
@@ -813,10 +813,10 @@ h4 {
 
 /*enchanted*/
 .heart_enchanted {
-  position: absolute;
+  position: relative;
   font-size: 20px;
-  top: 45px;
-  left: 345px;
+  top: 25px;
+  left: 40px;
   color: black;
 }
 
@@ -827,6 +827,9 @@ h4 {
 }
 
 .enchanted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   border: 2px solid #EEEEEE;
   border-radius: 6% 6% 0% 0%;
@@ -834,11 +837,10 @@ h4 {
   margin-top: -50px;
 }
 .enchanted__titre {
+  display: flex;
+  flex-direction: row;
   margin-top: 30px;
-  margin-left: 15px;
-}
-.enchanted__entree {
-  margin-left: 20px;
+  margin-left: -60px;
 }
 .enchanted__entree__foie {
   background-color: white;
@@ -978,7 +980,6 @@ h4 {
 }
 .enchanted__maindish {
   background-color: #EEEEEE;
-  margin-left: 20px;
   margin-top: 20px;
 }
 .enchanted__maindish__fresh {
@@ -1086,7 +1087,6 @@ h4 {
 .enchanted__dessert {
   background-color: #EEEEEE;
   padding-bottom: 30px;
-  margin-left: 20px;
 }
 .enchanted__dessert__hazelnut {
   background-color: white;
@@ -1193,10 +1193,10 @@ h4 {
 
 /*gourmand*/
 .heart_gourmand {
-  position: absolute;
+  position: relative;
   font-size: 20px;
-  top: 45px;
-  left: 320px;
+  top: 25px;
+  left: 125px;
   color: black;
 }
 
@@ -1207,6 +1207,9 @@ h4 {
 }
 
 .gourmand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   border: 2px solid #EEEEEE;
   border-radius: 6% 6% 0% 0%;
@@ -1214,8 +1217,10 @@ h4 {
   margin-top: -50px;
 }
 .gourmand__titre {
+  display: flex;
+  flex-direction: row;
   margin-top: 30px;
-  margin-left: 15px;
+  margin-left: -120px;
 }
 .gourmand__entree {
   margin-left: 20px;
@@ -1324,7 +1329,6 @@ h4 {
 }
 .gourmand__maindish {
   background-color: #EEEEEE;
-  margin-left: 20px;
   margin-top: 20px;
 }
 .gourmand__maindish__roast {
@@ -1432,7 +1436,6 @@ h4 {
 .gourmand__dessert {
   background-color: #EEEEEE;
   padding-bottom: 30px;
-  margin-left: 20px;
 }
 .gourmand__dessert__assorted {
   background-color: white;
@@ -1539,10 +1542,10 @@ h4 {
 
 /*bastille*/
 .heart_bastille {
-  position: absolute;
+  position: relative;
   font-size: 20px;
-  top: 45px;
-  left: 320px;
+  top: 25px;
+  left: 190px;
   color: black;
 }
 
@@ -1553,6 +1556,9 @@ h4 {
 }
 
 .bastille {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   border: 2px solid #EEEEEE;
   border-radius: 6% 6% 0% 0%;
@@ -1560,11 +1566,10 @@ h4 {
   margin-top: -50px;
 }
 .bastille__titre {
+  display: flex;
+  flex-direction: row;
   margin-top: 30px;
-  margin-left: 15px;
-}
-.bastille__entree {
-  margin-left: 20px;
+  margin-left: -205px;
 }
 .bastille__entree__citrus {
   background-color: white;
@@ -1673,7 +1678,6 @@ h4 {
 }
 .bastille__maindish {
   background-color: #EEEEEE;
-  margin-left: 20px;
   margin-top: 20px;
 }
 .bastille__maindish__scallops {
@@ -1781,7 +1785,6 @@ h4 {
 .bastille__dessert {
   background-color: #EEEEEE;
   padding-bottom: 30px;
-  margin-left: 20px;
 }
 .bastille__dessert__floral {
   background-color: white;

@@ -2,10 +2,10 @@
 /*gourmand*/
 
 .heart_gourmand {
-    position: absolute;
+    position: relative;
     font-size: 20px;
-    top: 45px;
-    left: 320px;
+    top: 25px;
+    left: 125px;
     color: black;
 }
 
@@ -16,6 +16,9 @@
 }
 
 .gourmand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     border: 2px solid $color-grey;
     border-radius: 6% 6% 0% 0%;
@@ -23,8 +26,10 @@
     margin-top: -50px;
 
     &__titre {
+        display: flex;
+        flex-direction: row;
         margin-top: 30px;
-        margin-left: 15px;
+        margin-left: -120px;
     }
 
     &__entree {
@@ -86,7 +91,6 @@
 
     &__maindish {
         background-color: #EEEEEE;
-        margin-left: 20px;
         margin-top: 20px;
 
         &__roast {
@@ -147,7 +151,6 @@
     &__dessert {
         background-color: #EEEEEE;
         padding-bottom: 30px;
-        margin-left: 20px;
 
         &__assorted {
             @include buttons_palette;
